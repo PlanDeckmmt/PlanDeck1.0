@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f2937;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #374151;
+            overflow-y: auto;
+        }
+
+        .quick-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Kleiner tussenruimte voor compactere weergave */
+        }
+
+        .quick-link-item {
+            background-color: #111827;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.3s ease;
+            cursor: move; /* Voor drag & drop */
+        }
+
+        .quick-link-item:hover {
+            background-color: #374151;
+        }
+
+        .quick-link-icon {
+            font-size: 30px;
+            margin-right: 10px;
+            color: #9ca3af;
+        }
+
+        .quick-link-text {
+            flex-grow: 1;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Zoekbalk Styling */
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Toevoeg/Verwijder Functie */
+        .add-link {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .add-link input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .add-link button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-link button:hover {
+            background-color: #45a049;
+        }
+
+        .remove-button {
+            color: red;
+            cursor: pointer;
+            font-size: 24px;
+            margin-left: 15px;
+        }
+
+        .remove-button:hover {
+            color: darkred;
+        }
+
+    </style>
+    <!-- Google Fonts voor Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Quick-links</h1>
+
+        <!-- Zoekfunctie -->
+        <input type="text" id="search" class="search-bar" placeholder="Zoek een link..." onkeyup="filterLinks()">
+
+        <!-- Quick-links lijst -->
+        <div class="quick-links" id="quickLinks"></div>
+
+        <!-- Toevoegen van nieuwe links -->
+        <div class="add-link">
+            <input type="text" id="newLinkText" placeholder="Link tekst" />
+            <input type="url" id="newLinkUrl" placeholder="Link URL" />
+            <button onclick="addLink()">Toevoegen</button>
+        </div>
+    </div>
+
+    <script>
+        // Haal opgeslagen links op uit local storage
+        function loadLinks() {
+            const storedLinks = JSON.parse(localStorage.getItem('quickLinks')) || [];
+            const quickLinksContainer = document.getElementById('quickLinks');
+            quickLinksContainer.innerHTML = ''; // Maak de container leeg voor het laden
+
+            storedLinks.forEach(link => {
+                const newLink = document.createElement('div');
+                newLink.classList.add('quick-link-item');
+                newLink.setAttribute('data-title', link.text);
+                newLink.innerHTML = `
+                    <i class="material-icons quick-link-icon">link</i>
+                    <span class="quick-link-text">${link.text}</span>
+                    <a href="${link.url}" target="_blank">
+                        <button>Bezoek</button>
+                    </a>
+                    <span class="material-icons remove-button" onclick="removeLink(this)">close</span>
+                `;
+                quickLinksContainer.appendChild(newLink);
+            });
+        }
+
+        // Voeg een nieuwe link toe en sla deze op in local storage
+        function addLink() {
+            const text = document.getElementById('newLinkText').value;
+            const url = document.getElementById('newLinkUrl').value;
+
+            if (text && url) {
+                const newLink = {
+                    text: text,
+                    url: url
+                };
+
+                // Haal bestaande links op, voeg de nieuwe toe en sla op
+                const storedLinks = JSON.parse(localStorage.getItem('quickLinks')) || [];
+                storedLinks.push(newLink);
+                localStorage.setItem('quickLinks', JSON.stringify(storedLinks));
+
+                // Update de weergave van de links
+                loadLinks();
+
+                // Wis de invoervelden
+                document.getElementById('newLinkText').value = '';
+                document.getElementById('newLinkUrl').value = '';
+            } else {
+                alert("Vul zowel een tekst als een URL in.");
+            }
+        }
+
+        // Verwijder een link en update local storage
+        function removeLink(element) {
+            const linkText = element.previousElementSibling.previousElementSibling.textContent;
+
+            // Haal bestaande links op en filter degene die verwijderd moet worden
+            let storedLinks = JSON.parse(localStorage.getItem('quickLinks')) || [];
+            storedLinks = storedLinks.filter(link => link.text !== linkText);
+
+            // Sla de gefilterde lijst op en update de weergave
+            localStorage.setItem('quickLinks', JSON.stringify(storedLinks));
+            loadLinks();
+        }
+
+        // Zoekfunctie
+        function filterLinks() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const links = document.getElementsByClassName('quick-link-item');
+            for (let i = 0; i < links.length; i++) {
+                const title = links[i].getAttribute('data-title').toLowerCase();
+                if (title.includes(searchValue)) {
+                    links[i].style.display = 'flex';
+                } else {
+                    links[i].style.display = 'none';
+                }
+            }
+        }
+
+        // Laad de links bij het opstarten van de pagina
+        window.onload = loadLinks;
+    </script>
+</body>
+</html>

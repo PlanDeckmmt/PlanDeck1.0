@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persoonlijk Welkomstmenu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #374151;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 50px;
+            position: relative; /* Voor het absolute positioneren van het menu */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        .statistics {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            background-color: #e2e2e2;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .menu {
+            margin-top: 30px;
+        }
+
+        .menu button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background-color: #45a049;
+        }
+
+        /* Hamburger menu styling */
+        .hamburger {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 10; /* Zorg ervoor dat het menu boven andere elementen verschijnt */
+        }
+
+        .menu-items {
+            display: none; /* Standaard is het menu verborgen */
+            position: absolute;
+            top: 60px; /* Plaats het menu net onder de hamburger */
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-items a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .menu-items a:hover {
+            background-color: #f1f1f1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        &#9776; <!-- Hamburger icon -->
+    </div>
+
+    <div class="menu-items" id="hamburgerMenu">
+        <a href="./kleurverandering.html">Kleuren</a>
+        <a href="./Flash.html">Flashcards</a>
+        <a href="./speech.html">Spraakherkenning</a>
+        <a href="./$.html">Statistieken</a>
+    </div>
+
+    <h1>Welkom, <span id="userName">[Naam]</span>!</h1>
+    <p>Leuk je weer te zien! Hier zijn je statistieken:</p>
+
+
+
+    <div class="menu">
+        <p>Wat wil je vandaag doen?</p>
+        <button onclick="goToPage('./kleurverandering.html')">Kleuren</button>
+        <button onclick="goToPage('./Flash.html')">Flashcards</button>
+        <button onclick="goToPage('./speech.html')">Spraakherkenning</button>
+        <button onclick="goToPage('./$.html')">Statistieken</button>
+    </div>
+
+    <script>
+        // Stel je naam en statistieken in
+        document.getElementById('userName').textContent = 'Jouw Naam'; // Vervang dit met de echte naam als je een inlog hebt
+        document.getElementById('completedTasks').textContent = 5; // Voorbeeld data
+        document.getElementById('openTasks').textContent = 3;
+        document.getElementById('studyHours').textContent = 8;
+
+        // Navigatiefunctie om naar verschillende pagina's te gaan
+        function goToPage(page) {
+            window.location.href = page; // Navigeert naar de opgegeven pagina
+        }
+
+        // Functie om het hamburger menu te togglen
+        function toggleMenu() {
+            const menu = document.getElementById('hamburgerMenu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none'; // Verberg het menu als het zichtbaar is
+            } else {
+                menu.style.display = 'block'; // Toon het menu als het verborgen is
+            }
+        }
+    </script>
+
+</body>
+</html>

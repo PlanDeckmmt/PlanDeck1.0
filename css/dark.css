@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadein 2s ease forwards;
+}
+button {
+    background-color: #374151;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px; /* Fixed width for the button */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4b5563;
+}

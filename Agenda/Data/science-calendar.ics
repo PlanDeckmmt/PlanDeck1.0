@@ -1,0 +1,1762 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+X-WR-CALNAME:2425 2V+ Science Planner
+PRODID:-//Digineum Planner//1.0//EN
+BEGIN:VTIMEZONE
+TZID:Europe/Amsterdam
+X-LIC-LOCATION:Europe/Amsterdam
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4390a7c0
+DTSTART;TZID=Europe/Amsterdam:20240902T083000
+SUMMARY:dynamiek: afstand, snelheid & versnelling, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/afstand-snelheid-
+ versnelling":https://www.digineum.nl/canonical/afstand-snelheid-vers
+ nelling
+DESCRIPTION:Leerdoelen\N\NJe moet aan de hand van een zelfgemaakt vo
+ ertuig dat wordt aangedreven door een leeglopende ballon een tabel m
+ et afstand per seconde kunnen invullen\NJe moet weten dat in een s/t
+ -diagram de afstand is uitgezet tegen de tijd.\NJe moet weten dat de
+  afstand wordt aangegeven met de grootheid s en uitgedrukt in de een
+ heid m van meter.\NJe moet weten dat de tijd wordt aangegeven met de
+  grootheid t en uitgedrukt in de eenheid s van seconden.\NJe moet we
+ ten dat de snelheid wordt aangegeven met de grootheid v en uitgedruk
+ t in de eenheid m/s van seconden per seconde.\NJe moet weten dat afg
+ elegde afstand = eindafstand - beginafstand (Δs = seind - sbegin).\
+ NJe moet weten dat tijdsduur = eindtijd - begintijd (Δt = teind - t
+ begin).\NJe moet weten dat de gemiddelde snelheid is afgelegde afsta
+ nd / tijdsduur (vgem = Δs/Δt).\NJe moet weten dat in een s/t-diagr
+ am de afstand is uitgezet tegen de tijd.\NJe moet weten dat 1 m/s he
+ tzelfde is als 1 × 3,6 = 1 km/h.\NJe moet weten dat 3,6 km/h hetzel
+ fde is als 3,6 / 3,6 = 1 m/s.\NJe moet aan de hand van een slow mo (
+ slow motion) van een video van een pingpongballetje dat tegen een mu
+ ur rolt een stop-motion kunnen maken waarbij gesuggereerd wordt dat 
+ een mens tegen een muur botst.\NJe moet weten dat in een v/t-diagram
+  de snelheid is uitgezet tegen de tijd.\NJe moet weten dat de versne
+ lling wordt aangegeven met de grootheid a en uitgedrukt in de eenhei
+ d m/s2 van meter per seconden kwadraat.\NJe weten dat in een v/t-dia
+ gram is de afgelegde afstand gelijk aan het oppervlak onder de lijn.
+ \NJe moet met de oppervlakte methode kunnen werken.\NJe moet de form
+ ule a = Δv / Δt kunnen omzetten in Δv = a × Δt\NJe moet weten d
+ at in een s/t-diagram met een constante snelheid het s/t-diagram een
+  rechte lijn is.\NJe moet weten dat in een s/t-diagram met een versn
+ elling het s/t-diagram een gebogen lijn is.\NJe moet op Google Sheet
+ s kunnen inloggen en je moet weten hoe je bestanden opent en kopieer
+ t.\NJe moet in Google Sheets kunnen omgaan met kolommen en cellen.\N
+ Je moet in Google Sheets een tabel kunnen opmaken.\NJe moet in Googl
+ e Sheets functies in een vakje kunnen maken.\NJe moet weten wat =A2+
+ 1 en =A2+B2 betekent.\NJe moet waarden in Google Sheets kunnen versl
+ epen.\NJe moet het verschil weten tussen =A2+B2 en =A2+$B$2\NJe moet
+  de =SOM in Google Sheets kunnen gebruiken.\NJe moet de =GEMIODELDE 
+ in Google Sheets kunnen gebruiken.\NJe moet de =ALS in Google Sheets
+  kunnen gebruiken.\NJe moet het verschil tussen een eenparige bewegi
+ ng en een eenparige versnelde beweging kunnen uitleggen.\NJe moet he
+ t verschil tussen een eenparige versnelde beweging en een eenparige 
+ vertraagde beweging kunnen uitleggen.\NJe moet het verschil tussen e
+ en eenparige versnelde beweging en een variabel versnelde beweging k
+ unnen uitleggen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4390bbe5
+DTSTART;TZID=Europe/Amsterdam:20240909T083000
+SUMMARY:dynamiek: afstand, snelheid & versnelling, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/afstand-snelheid-
+ versnelling":https://www.digineum.nl/canonical/afstand-snelheid-vers
+ nelling
+DESCRIPTION:Leerdoelen\N\NJe moet aan de hand van een zelfgemaakt vo
+ ertuig dat wordt aangedreven door een leeglopende ballon een tabel m
+ et afstand per seconde kunnen invullen\NJe moet weten dat in een s/t
+ -diagram de afstand is uitgezet tegen de tijd.\NJe moet weten dat de
+  afstand wordt aangegeven met de grootheid s en uitgedrukt in de een
+ heid m van meter.\NJe moet weten dat de tijd wordt aangegeven met de
+  grootheid t en uitgedrukt in de eenheid s van seconden.\NJe moet we
+ ten dat de snelheid wordt aangegeven met de grootheid v en uitgedruk
+ t in de eenheid m/s van seconden per seconde.\NJe moet weten dat afg
+ elegde afstand = eindafstand - beginafstand (Δs = seind - sbegin).\
+ NJe moet weten dat tijdsduur = eindtijd - begintijd (Δt = teind - t
+ begin).\NJe moet weten dat de gemiddelde snelheid is afgelegde afsta
+ nd / tijdsduur (vgem = Δs/Δt).\NJe moet weten dat in een s/t-diagr
+ am de afstand is uitgezet tegen de tijd.\NJe moet weten dat 1 m/s he
+ tzelfde is als 1 × 3,6 = 1 km/h.\NJe moet weten dat 3,6 km/h hetzel
+ fde is als 3,6 / 3,6 = 1 m/s.\NJe moet aan de hand van een slow mo (
+ slow motion) van een video van een pingpongballetje dat tegen een mu
+ ur rolt een stop-motion kunnen maken waarbij gesuggereerd wordt dat 
+ een mens tegen een muur botst.\NJe moet weten dat in een v/t-diagram
+  de snelheid is uitgezet tegen de tijd.\NJe moet weten dat de versne
+ lling wordt aangegeven met de grootheid a en uitgedrukt in de eenhei
+ d m/s2 van meter per seconden kwadraat.\NJe weten dat in een v/t-dia
+ gram is de afgelegde afstand gelijk aan het oppervlak onder de lijn.
+ \NJe moet met de oppervlakte methode kunnen werken.\NJe moet de form
+ ule a = Δv / Δt kunnen omzetten in Δv = a × Δt\NJe moet weten d
+ at in een s/t-diagram met een constante snelheid het s/t-diagram een
+  rechte lijn is.\NJe moet weten dat in een s/t-diagram met een versn
+ elling het s/t-diagram een gebogen lijn is.\NJe moet op Google Sheet
+ s kunnen inloggen en je moet weten hoe je bestanden opent en kopieer
+ t.\NJe moet in Google Sheets kunnen omgaan met kolommen en cellen.\N
+ Je moet in Google Sheets een tabel kunnen opmaken.\NJe moet in Googl
+ e Sheets functies in een vakje kunnen maken.\NJe moet weten wat =A2+
+ 1 en =A2+B2 betekent.\NJe moet waarden in Google Sheets kunnen versl
+ epen.\NJe moet het verschil weten tussen =A2+B2 en =A2+$B$2\NJe moet
+  de =SOM in Google Sheets kunnen gebruiken.\NJe moet de =GEMIODELDE 
+ in Google Sheets kunnen gebruiken.\NJe moet de =ALS in Google Sheets
+  kunnen gebruiken.\NJe moet het verschil tussen een eenparige bewegi
+ ng en een eenparige versnelde beweging kunnen uitleggen.\NJe moet he
+ t verschil tussen een eenparige versnelde beweging en een eenparige 
+ vertraagde beweging kunnen uitleggen.\NJe moet het verschil tussen e
+ en eenparige versnelde beweging en een variabel versnelde beweging k
+ unnen uitleggen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4390ce71
+DTSTART;TZID=Europe/Amsterdam:20240916T083000
+SUMMARY:dynamiek: afstand, snelheid & versnelling, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/afstand-snelheid-
+ versnelling":https://www.digineum.nl/canonical/afstand-snelheid-vers
+ nelling
+DESCRIPTION:Leerdoelen\N\NJe moet aan de hand van een zelfgemaakt vo
+ ertuig dat wordt aangedreven door een leeglopende ballon een tabel m
+ et afstand per seconde kunnen invullen\NJe moet weten dat in een s/t
+ -diagram de afstand is uitgezet tegen de tijd.\NJe moet weten dat de
+  afstand wordt aangegeven met de grootheid s en uitgedrukt in de een
+ heid m van meter.\NJe moet weten dat de tijd wordt aangegeven met de
+  grootheid t en uitgedrukt in de eenheid s van seconden.\NJe moet we
+ ten dat de snelheid wordt aangegeven met de grootheid v en uitgedruk
+ t in de eenheid m/s van seconden per seconde.\NJe moet weten dat afg
+ elegde afstand = eindafstand - beginafstand (Δs = seind - sbegin).\
+ NJe moet weten dat tijdsduur = eindtijd - begintijd (Δt = teind - t
+ begin).\NJe moet weten dat de gemiddelde snelheid is afgelegde afsta
+ nd / tijdsduur (vgem = Δs/Δt).\NJe moet weten dat in een s/t-diagr
+ am de afstand is uitgezet tegen de tijd.\NJe moet weten dat 1 m/s he
+ tzelfde is als 1 × 3,6 = 1 km/h.\NJe moet weten dat 3,6 km/h hetzel
+ fde is als 3,6 / 3,6 = 1 m/s.\NJe moet aan de hand van een slow mo (
+ slow motion) van een video van een pingpongballetje dat tegen een mu
+ ur rolt een stop-motion kunnen maken waarbij gesuggereerd wordt dat 
+ een mens tegen een muur botst.\NJe moet weten dat in een v/t-diagram
+  de snelheid is uitgezet tegen de tijd.\NJe moet weten dat de versne
+ lling wordt aangegeven met de grootheid a en uitgedrukt in de eenhei
+ d m/s2 van meter per seconden kwadraat.\NJe weten dat in een v/t-dia
+ gram is de afgelegde afstand gelijk aan het oppervlak onder de lijn.
+ \NJe moet met de oppervlakte methode kunnen werken.\NJe moet de form
+ ule a = Δv / Δt kunnen omzetten in Δv = a × Δt\NJe moet weten d
+ at in een s/t-diagram met een constante snelheid het s/t-diagram een
+  rechte lijn is.\NJe moet weten dat in een s/t-diagram met een versn
+ elling het s/t-diagram een gebogen lijn is.\NJe moet op Google Sheet
+ s kunnen inloggen en je moet weten hoe je bestanden opent en kopieer
+ t.\NJe moet in Google Sheets kunnen omgaan met kolommen en cellen.\N
+ Je moet in Google Sheets een tabel kunnen opmaken.\NJe moet in Googl
+ e Sheets functies in een vakje kunnen maken.\NJe moet weten wat =A2+
+ 1 en =A2+B2 betekent.\NJe moet waarden in Google Sheets kunnen versl
+ epen.\NJe moet het verschil weten tussen =A2+B2 en =A2+$B$2\NJe moet
+  de =SOM in Google Sheets kunnen gebruiken.\NJe moet de =GEMIODELDE 
+ in Google Sheets kunnen gebruiken.\NJe moet de =ALS in Google Sheets
+  kunnen gebruiken.\NJe moet het verschil tussen een eenparige bewegi
+ ng en een eenparige versnelde beweging kunnen uitleggen.\NJe moet he
+ t verschil tussen een eenparige versnelde beweging en een eenparige 
+ vertraagde beweging kunnen uitleggen.\NJe moet het verschil tussen e
+ en eenparige versnelde beweging en een variabel versnelde beweging k
+ unnen uitleggen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4390dcf4
+DTSTART;TZID=Europe/Amsterdam:20240923T083000
+SUMMARY:dynamiek: inspanning, beweging & verbranding, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/inspanning-bewegi
+ ng-verbranding":https://www.digineum.nl/canonical/inspanning-bewegin
+ g-verbranding
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat spieren kunnen samentrek
+ ken en ontspannen.\NJe moet weten dat het spierstelsel wordt aangest
+ uurd door signalen uit het zenuwstelsel.\NJe moet weten dat bij verb
+ randing glucose onder invloed van zuurstof wordt omgezet in koolstof
+ dioxide en water C6H12O6 + 6O2 → 6CO2 + 6H2O\NJe moet weten dat bi
+ j verbranding energie vrijkomt.\NJe moet het verschil tussen voeding
+ sstoffen en verteringsproducten kunnen aangeven.\NJe moet weten welk
+ e voedingsstoffen zonder vertering kunnen worden opgenomen in de blo
+ edsomloop.\NJe moet weten dat brandstof, bouwstof, reservestof en be
+ schermende stof functies zijn van voedingsstoffen.\NJe moet weten da
+ t glucose een belangrijke brandstof is voor processen in ons lichaam
+ .\NJe moet weten dat koolstofdioxide die bij verbranding in ons lich
+ aam ontstaat, opgenomen wordt in de bloedsomloop en het lichaam verl
+ aat via uitademing.\NJe moet weten dat verbranding hoofdzakelijk pla
+ atsvind in mitochondriën.\NJe moet weten dat de energie die vrijkom
+ t bij verbranding wordt vastgelegd in energiecarriers.\NJe moet wete
+ n dat ATP (adenosinetrifosfaat) / ADP (adenosinedifosfaat) een energ
+ iecarrier is.\NJe moet weten dat ATP (adenosinetrifosfaat) energieri
+ jk is en ADP (adenosinedifosfaat) energie arm is.\NJe kunnen uitlegg
+ en dat energie wordt vastgelegd in de reactie: ADP + energie → ATP
+ .\NJe kunnen uitleggen dat energie vrijkomt bij de reactie: ATP → 
+ ADP + energie.\NJe moet kunnen uitleggen dat de reactie ADP + energi
+ e → ATP in mitochondriën plaatsvindt en de reactie ATP → ADP + 
+ energie bij spieren plaatsvind.\NJe moet weten dat spieren met pezen
+  aan botten verbonden zijn.\NJe moet weten wat antagonisten zijn en 
+ de werking van antagonisten kunnen uitleggen.\NJe moet weten op welk
+ e manieren beenderen met elkaar verbonden kunnen zijn.\NJe moet wete
+ n bij welke beenverbindingen veel of weinig of geen beweging mogelij
+ k is.\NJe moet weten welke rol fontanellen bij de geboorte spelen.\N
+ Je moet weten welke type gewrichten er zijn.\NJe weten uit welke ond
+ erdelen een gewicht bestaat en je moet de functie van deze onderdele
+ n kunnen geven.\NJe moet weten wat kalkwater (calciumhydroxide) is e
+ n dat kalkwater gebruikt kan worden voor het aantonen van kalkwater.
+ \NJe moet weten dat calciumhydroxide oplost in water Ca(OH)2 (s) + H
+ 2O (l) → Ca2+ + 2OH- + H2O (l)\NJe moet weten dat ionen geladen de
+ eltjes zijn.\NJe moet weten dat calciumhydroxide onder invloed van k
+ oolstofdioxide wordt omgezet in calciumcarbonaat Ca(OH)2 + CO2 (g) �
+ �� CaCO3 (s) + H2O (l)\NJe moet weten wat een gaswasfles en hoe je e
+ en gaswasfles kunt gebruiken om koolstofdioxide aan te tonen.\NJe mo
+ et met behulp van een Arduino UNO een luchtpomp kunnen aansturen.\NJ
+ e moet een proefopstelling kunnen opzetten en uitvoeren om de koolst
+ ofdioxide die ontstaat bij de verbranding van kaarsvet aan te tonen.
+ \NJe moet een relatie kunnen leggen tussen inspanning, verbranding, 
+ glucose, zuurstof en koolstofdioxide.\NJe moet weten van causale ver
+ banden zijn.\NJe moet weten wat positieve en negatieve terugkoppelin
+ g is.\NJe moet resultaten kunnen analyseren die je verzameld met sen
+ soren binnen het programma Coach 7.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4390ea6a
+DTSTART;TZID=Europe/Amsterdam:20240930T083000
+SUMMARY:dynamiek: inspanning, beweging & verbranding, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/inspanning-bewegi
+ ng-verbranding":https://www.digineum.nl/canonical/inspanning-bewegin
+ g-verbranding
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat spieren kunnen samentrek
+ ken en ontspannen.\NJe moet weten dat het spierstelsel wordt aangest
+ uurd door signalen uit het zenuwstelsel.\NJe moet weten dat bij verb
+ randing glucose onder invloed van zuurstof wordt omgezet in koolstof
+ dioxide en water C6H12O6 + 6O2 → 6CO2 + 6H2O\NJe moet weten dat bi
+ j verbranding energie vrijkomt.\NJe moet het verschil tussen voeding
+ sstoffen en verteringsproducten kunnen aangeven.\NJe moet weten welk
+ e voedingsstoffen zonder vertering kunnen worden opgenomen in de blo
+ edsomloop.\NJe moet weten dat brandstof, bouwstof, reservestof en be
+ schermende stof functies zijn van voedingsstoffen.\NJe moet weten da
+ t glucose een belangrijke brandstof is voor processen in ons lichaam
+ .\NJe moet weten dat koolstofdioxide die bij verbranding in ons lich
+ aam ontstaat, opgenomen wordt in de bloedsomloop en het lichaam verl
+ aat via uitademing.\NJe moet weten dat verbranding hoofdzakelijk pla
+ atsvind in mitochondriën.\NJe moet weten dat de energie die vrijkom
+ t bij verbranding wordt vastgelegd in energiecarriers.\NJe moet wete
+ n dat ATP (adenosinetrifosfaat) / ADP (adenosinedifosfaat) een energ
+ iecarrier is.\NJe moet weten dat ATP (adenosinetrifosfaat) energieri
+ jk is en ADP (adenosinedifosfaat) energie arm is.\NJe kunnen uitlegg
+ en dat energie wordt vastgelegd in de reactie: ADP + energie → ATP
+ .\NJe kunnen uitleggen dat energie vrijkomt bij de reactie: ATP → 
+ ADP + energie.\NJe moet kunnen uitleggen dat de reactie ADP + energi
+ e → ATP in mitochondriën plaatsvindt en de reactie ATP → ADP + 
+ energie bij spieren plaatsvind.\NJe moet weten dat spieren met pezen
+  aan botten verbonden zijn.\NJe moet weten wat antagonisten zijn en 
+ de werking van antagonisten kunnen uitleggen.\NJe moet weten op welk
+ e manieren beenderen met elkaar verbonden kunnen zijn.\NJe moet wete
+ n bij welke beenverbindingen veel of weinig of geen beweging mogelij
+ k is.\NJe moet weten welke rol fontanellen bij de geboorte spelen.\N
+ Je moet weten welke type gewrichten er zijn.\NJe weten uit welke ond
+ erdelen een gewicht bestaat en je moet de functie van deze onderdele
+ n kunnen geven.\NJe moet weten wat kalkwater (calciumhydroxide) is e
+ n dat kalkwater gebruikt kan worden voor het aantonen van kalkwater.
+ \NJe moet weten dat calciumhydroxide oplost in water Ca(OH)2 (s) + H
+ 2O (l) → Ca2+ + 2OH- + H2O (l)\NJe moet weten dat ionen geladen de
+ eltjes zijn.\NJe moet weten dat calciumhydroxide onder invloed van k
+ oolstofdioxide wordt omgezet in calciumcarbonaat Ca(OH)2 + CO2 (g) �
+ �� CaCO3 (s) + H2O (l)\NJe moet weten wat een gaswasfles en hoe je e
+ en gaswasfles kunt gebruiken om koolstofdioxide aan te tonen.\NJe mo
+ et met behulp van een Arduino UNO een luchtpomp kunnen aansturen.\NJ
+ e moet een proefopstelling kunnen opzetten en uitvoeren om de koolst
+ ofdioxide die ontstaat bij de verbranding van kaarsvet aan te tonen.
+ \NJe moet een relatie kunnen leggen tussen inspanning, verbranding, 
+ glucose, zuurstof en koolstofdioxide.\NJe moet weten van causale ver
+ banden zijn.\NJe moet weten wat positieve en negatieve terugkoppelin
+ g is.\NJe moet resultaten kunnen analyseren die je verzameld met sen
+ soren binnen het programma Coach 7.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4390f840
+DTSTART;TZID=Europe/Amsterdam:20241007T083000
+SUMMARY:dynamiek: inspanning, beweging & verbranding, ± 2 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/inspanning-bewegi
+ ng-verbranding":https://www.digineum.nl/canonical/inspanning-bewegin
+ g-verbranding
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat spieren kunnen samentrek
+ ken en ontspannen.\NJe moet weten dat het spierstelsel wordt aangest
+ uurd door signalen uit het zenuwstelsel.\NJe moet weten dat bij verb
+ randing glucose onder invloed van zuurstof wordt omgezet in koolstof
+ dioxide en water C6H12O6 + 6O2 → 6CO2 + 6H2O\NJe moet weten dat bi
+ j verbranding energie vrijkomt.\NJe moet het verschil tussen voeding
+ sstoffen en verteringsproducten kunnen aangeven.\NJe moet weten welk
+ e voedingsstoffen zonder vertering kunnen worden opgenomen in de blo
+ edsomloop.\NJe moet weten dat brandstof, bouwstof, reservestof en be
+ schermende stof functies zijn van voedingsstoffen.\NJe moet weten da
+ t glucose een belangrijke brandstof is voor processen in ons lichaam
+ .\NJe moet weten dat koolstofdioxide die bij verbranding in ons lich
+ aam ontstaat, opgenomen wordt in de bloedsomloop en het lichaam verl
+ aat via uitademing.\NJe moet weten dat verbranding hoofdzakelijk pla
+ atsvind in mitochondriën.\NJe moet weten dat de energie die vrijkom
+ t bij verbranding wordt vastgelegd in energiecarriers.\NJe moet wete
+ n dat ATP (adenosinetrifosfaat) / ADP (adenosinedifosfaat) een energ
+ iecarrier is.\NJe moet weten dat ATP (adenosinetrifosfaat) energieri
+ jk is en ADP (adenosinedifosfaat) energie arm is.\NJe kunnen uitlegg
+ en dat energie wordt vastgelegd in de reactie: ADP + energie → ATP
+ .\NJe kunnen uitleggen dat energie vrijkomt bij de reactie: ATP → 
+ ADP + energie.\NJe moet kunnen uitleggen dat de reactie ADP + energi
+ e → ATP in mitochondriën plaatsvindt en de reactie ATP → ADP + 
+ energie bij spieren plaatsvind.\NJe moet weten dat spieren met pezen
+  aan botten verbonden zijn.\NJe moet weten wat antagonisten zijn en 
+ de werking van antagonisten kunnen uitleggen.\NJe moet weten op welk
+ e manieren beenderen met elkaar verbonden kunnen zijn.\NJe moet wete
+ n bij welke beenverbindingen veel of weinig of geen beweging mogelij
+ k is.\NJe moet weten welke rol fontanellen bij de geboorte spelen.\N
+ Je moet weten welke type gewrichten er zijn.\NJe weten uit welke ond
+ erdelen een gewicht bestaat en je moet de functie van deze onderdele
+ n kunnen geven.\NJe moet weten wat kalkwater (calciumhydroxide) is e
+ n dat kalkwater gebruikt kan worden voor het aantonen van kalkwater.
+ \NJe moet weten dat calciumhydroxide oplost in water Ca(OH)2 (s) + H
+ 2O (l) → Ca2+ + 2OH- + H2O (l)\NJe moet weten dat ionen geladen de
+ eltjes zijn.\NJe moet weten dat calciumhydroxide onder invloed van k
+ oolstofdioxide wordt omgezet in calciumcarbonaat Ca(OH)2 + CO2 (g) �
+ �� CaCO3 (s) + H2O (l)\NJe moet weten wat een gaswasfles en hoe je e
+ en gaswasfles kunt gebruiken om koolstofdioxide aan te tonen.\NJe mo
+ et met behulp van een Arduino UNO een luchtpomp kunnen aansturen.\NJ
+ e moet een proefopstelling kunnen opzetten en uitvoeren om de koolst
+ ofdioxide die ontstaat bij de verbranding van kaarsvet aan te tonen.
+ \NJe moet een relatie kunnen leggen tussen inspanning, verbranding, 
+ glucose, zuurstof en koolstofdioxide.\NJe moet weten van causale ver
+ banden zijn.\NJe moet weten wat positieve en negatieve terugkoppelin
+ g is.\NJe moet resultaten kunnen analyseren die je verzameld met sen
+ soren binnen het programma Coach 7.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb439109e5
+DTSTART;TZID=Europe/Amsterdam:20241007T083000
+SUMMARY:dynamiek: zwaartekracht, spankracht & buigkracht, ± 2 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/zwaartekracht-spa
+ nkracht-buigkracht":https://www.digineum.nl/canonical/zwaartekracht-
+ spankracht-buigkracht
+DESCRIPTION:Leerdoelen\N\NJe moet aan de hand van een experiment waa
+ rbij je vuur zonder vuur probeert te maken een relatie leggen tussen
+  weerstand en warmte.\NJe moet weten in een vacuüm geen luchtweerst
+ and is.\NJe moet weten luchtweerstand een wrijvingskracht is.\NJe mo
+ et weten dat alle voorwerpen in een vacuüm even snel naar beneden v
+ allen.\NJe moet weten dat de valversnelling op Aarde ongeveer 9,8 me
+ ter per seconde kwadraat is en dat deze valversnelling vaak afgerond
+  wordt naar 10 meter per seconde kwadraat.\NJe moet weten dat de val
+ versnelling op Aarde niet overal even groot is.\NJe moet met behulp 
+ van een model het verschil tussen een vrije val met en zonder weerst
+ and kunnen duiden.\NJe moet weten welke invloed de massa en het oppe
+ rvlak hebben bij een vrije val met luchtweerstand.\NJe moet kunnen r
+ ekenen met de formule voor de valversnelling: s = ½⋅g⋅t²\NJe m
+ oet kunnen uitrekenen na hoeveel seconden een voorwerp vanaf een bep
+ aalde hoogte in vrije val de grond raakt.\NJe moet kunnen rekenen me
+ t de formule voor zwaartekracht: Fz = m⋅g\NJe moet weten hoe je kr
+ achten moet ontbinden.\NJe moet weten welke krachten een rol spelen 
+ bij een object op een helling.\NJe moet met behulp van hulplijnen de
+  zwaartekracht (Fz), Fz evenwijdig (Fz//) en de Fz loodrecht (Fz⅃)
+  moet construeren.\NJe moet weten dat de normaalkracht (Fn) loodrech
+ t staat op het object en even groot maar tegengesteld is aan Fz lood
+ recht (Fz⅃).\NJe moet krachten op schaal kunnen tekenen.\NJe moet 
+ weten wat een scalable vector graphics (SVG) is.\NJe het verschil we
+ ten tussen een vectorafbeelding en een bitmap.\NJe moet eenvoudige v
+ ormen met behulp van code kunnen maken.\NJe moet eenvoudige SVG-code
+  kunnen analyseren.\NJe moet weten wat tags, elementen, attributen e
+ n waarden zijn in SVG-code\NJe moet met behulp van een code-editor e
+ en eenvoudige vectorafbeelding kunnen maken.\NJe moet met behulp van
+  een tekstverwerkingsprogramma een eenvoudige vectorafbeelding kunne
+ n maken.\NJe moet een vectorafbeelding kunnen gebruiken om krachten 
+ te ontbinden.\NJe moet bij benadering kunnen aangeven hoe spankracht
+ en en buigkrachten werken bij tuibruggen, boogbruggen, hangbruggen, 
+ kraagbruggen en vakwerkbruggen.\NJe moet een min of meer stabiele br
+ ug kunnen schetsen.\NJe moet met behulp van een lijmpistool en spagh
+ etti een spaghettibrug kunnen maken.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43911c62
+DTSTART;TZID=Europe/Amsterdam:20241014T083000
+SUMMARY:dynamiek: zwaartekracht, spankracht & buigkracht, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/zwaartekracht-spa
+ nkracht-buigkracht":https://www.digineum.nl/canonical/zwaartekracht-
+ spankracht-buigkracht
+DESCRIPTION:Leerdoelen\N\NJe moet aan de hand van een experiment waa
+ rbij je vuur zonder vuur probeert te maken een relatie leggen tussen
+  weerstand en warmte.\NJe moet weten in een vacuüm geen luchtweerst
+ and is.\NJe moet weten luchtweerstand een wrijvingskracht is.\NJe mo
+ et weten dat alle voorwerpen in een vacuüm even snel naar beneden v
+ allen.\NJe moet weten dat de valversnelling op Aarde ongeveer 9,8 me
+ ter per seconde kwadraat is en dat deze valversnelling vaak afgerond
+  wordt naar 10 meter per seconde kwadraat.\NJe moet weten dat de val
+ versnelling op Aarde niet overal even groot is.\NJe moet met behulp 
+ van een model het verschil tussen een vrije val met en zonder weerst
+ and kunnen duiden.\NJe moet weten welke invloed de massa en het oppe
+ rvlak hebben bij een vrije val met luchtweerstand.\NJe moet kunnen r
+ ekenen met de formule voor de valversnelling: s = ½⋅g⋅t²\NJe m
+ oet kunnen uitrekenen na hoeveel seconden een voorwerp vanaf een bep
+ aalde hoogte in vrije val de grond raakt.\NJe moet kunnen rekenen me
+ t de formule voor zwaartekracht: Fz = m⋅g\NJe moet weten hoe je kr
+ achten moet ontbinden.\NJe moet weten welke krachten een rol spelen 
+ bij een object op een helling.\NJe moet met behulp van hulplijnen de
+  zwaartekracht (Fz), Fz evenwijdig (Fz//) en de Fz loodrecht (Fz⅃)
+  moet construeren.\NJe moet weten dat de normaalkracht (Fn) loodrech
+ t staat op het object en even groot maar tegengesteld is aan Fz lood
+ recht (Fz⅃).\NJe moet krachten op schaal kunnen tekenen.\NJe moet 
+ weten wat een scalable vector graphics (SVG) is.\NJe het verschil we
+ ten tussen een vectorafbeelding en een bitmap.\NJe moet eenvoudige v
+ ormen met behulp van code kunnen maken.\NJe moet eenvoudige SVG-code
+  kunnen analyseren.\NJe moet weten wat tags, elementen, attributen e
+ n waarden zijn in SVG-code\NJe moet met behulp van een code-editor e
+ en eenvoudige vectorafbeelding kunnen maken.\NJe moet met behulp van
+  een tekstverwerkingsprogramma een eenvoudige vectorafbeelding kunne
+ n maken.\NJe moet een vectorafbeelding kunnen gebruiken om krachten 
+ te ontbinden.\NJe moet bij benadering kunnen aangeven hoe spankracht
+ en en buigkrachten werken bij tuibruggen, boogbruggen, hangbruggen, 
+ kraagbruggen en vakwerkbruggen.\NJe moet een min of meer stabiele br
+ ug kunnen schetsen.\NJe moet met behulp van een lijmpistool en spagh
+ etti een spaghettibrug kunnen maken.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43912ac4
+DTSTART;TZID=Europe/Amsterdam:20241021T083000
+SUMMARY:dynamiek: zwaartekracht, spankracht & buigkracht, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/zwaartekracht-spa
+ nkracht-buigkracht":https://www.digineum.nl/canonical/zwaartekracht-
+ spankracht-buigkracht
+DESCRIPTION:Leerdoelen\N\NJe moet aan de hand van een experiment waa
+ rbij je vuur zonder vuur probeert te maken een relatie leggen tussen
+  weerstand en warmte.\NJe moet weten in een vacuüm geen luchtweerst
+ and is.\NJe moet weten luchtweerstand een wrijvingskracht is.\NJe mo
+ et weten dat alle voorwerpen in een vacuüm even snel naar beneden v
+ allen.\NJe moet weten dat de valversnelling op Aarde ongeveer 9,8 me
+ ter per seconde kwadraat is en dat deze valversnelling vaak afgerond
+  wordt naar 10 meter per seconde kwadraat.\NJe moet weten dat de val
+ versnelling op Aarde niet overal even groot is.\NJe moet met behulp 
+ van een model het verschil tussen een vrije val met en zonder weerst
+ and kunnen duiden.\NJe moet weten welke invloed de massa en het oppe
+ rvlak hebben bij een vrije val met luchtweerstand.\NJe moet kunnen r
+ ekenen met de formule voor de valversnelling: s = ½⋅g⋅t²\NJe m
+ oet kunnen uitrekenen na hoeveel seconden een voorwerp vanaf een bep
+ aalde hoogte in vrije val de grond raakt.\NJe moet kunnen rekenen me
+ t de formule voor zwaartekracht: Fz = m⋅g\NJe moet weten hoe je kr
+ achten moet ontbinden.\NJe moet weten welke krachten een rol spelen 
+ bij een object op een helling.\NJe moet met behulp van hulplijnen de
+  zwaartekracht (Fz), Fz evenwijdig (Fz//) en de Fz loodrecht (Fz⅃)
+  moet construeren.\NJe moet weten dat de normaalkracht (Fn) loodrech
+ t staat op het object en even groot maar tegengesteld is aan Fz lood
+ recht (Fz⅃).\NJe moet krachten op schaal kunnen tekenen.\NJe moet 
+ weten wat een scalable vector graphics (SVG) is.\NJe het verschil we
+ ten tussen een vectorafbeelding en een bitmap.\NJe moet eenvoudige v
+ ormen met behulp van code kunnen maken.\NJe moet eenvoudige SVG-code
+  kunnen analyseren.\NJe moet weten wat tags, elementen, attributen e
+ n waarden zijn in SVG-code\NJe moet met behulp van een code-editor e
+ en eenvoudige vectorafbeelding kunnen maken.\NJe moet met behulp van
+  een tekstverwerkingsprogramma een eenvoudige vectorafbeelding kunne
+ n maken.\NJe moet een vectorafbeelding kunnen gebruiken om krachten 
+ te ontbinden.\NJe moet bij benadering kunnen aangeven hoe spankracht
+ en en buigkrachten werken bij tuibruggen, boogbruggen, hangbruggen, 
+ kraagbruggen en vakwerkbruggen.\NJe moet een min of meer stabiele br
+ ug kunnen schetsen.\NJe moet met behulp van een lijmpistool en spagh
+ etti een spaghettibrug kunnen maken.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43913fbe
+DTSTART;TZID=Europe/Amsterdam:20241104T083000
+SUMMARY:dynamiek: zwaartekracht, spankracht & buigkracht, ± 2 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/zwaartekracht-spa
+ nkracht-buigkracht":https://www.digineum.nl/canonical/zwaartekracht-
+ spankracht-buigkracht
+DESCRIPTION:Leerdoelen\N\NJe moet aan de hand van een experiment waa
+ rbij je vuur zonder vuur probeert te maken een relatie leggen tussen
+  weerstand en warmte.\NJe moet weten in een vacuüm geen luchtweerst
+ and is.\NJe moet weten luchtweerstand een wrijvingskracht is.\NJe mo
+ et weten dat alle voorwerpen in een vacuüm even snel naar beneden v
+ allen.\NJe moet weten dat de valversnelling op Aarde ongeveer 9,8 me
+ ter per seconde kwadraat is en dat deze valversnelling vaak afgerond
+  wordt naar 10 meter per seconde kwadraat.\NJe moet weten dat de val
+ versnelling op Aarde niet overal even groot is.\NJe moet met behulp 
+ van een model het verschil tussen een vrije val met en zonder weerst
+ and kunnen duiden.\NJe moet weten welke invloed de massa en het oppe
+ rvlak hebben bij een vrije val met luchtweerstand.\NJe moet kunnen r
+ ekenen met de formule voor de valversnelling: s = ½⋅g⋅t²\NJe m
+ oet kunnen uitrekenen na hoeveel seconden een voorwerp vanaf een bep
+ aalde hoogte in vrije val de grond raakt.\NJe moet kunnen rekenen me
+ t de formule voor zwaartekracht: Fz = m⋅g\NJe moet weten hoe je kr
+ achten moet ontbinden.\NJe moet weten welke krachten een rol spelen 
+ bij een object op een helling.\NJe moet met behulp van hulplijnen de
+  zwaartekracht (Fz), Fz evenwijdig (Fz//) en de Fz loodrecht (Fz⅃)
+  moet construeren.\NJe moet weten dat de normaalkracht (Fn) loodrech
+ t staat op het object en even groot maar tegengesteld is aan Fz lood
+ recht (Fz⅃).\NJe moet krachten op schaal kunnen tekenen.\NJe moet 
+ weten wat een scalable vector graphics (SVG) is.\NJe het verschil we
+ ten tussen een vectorafbeelding en een bitmap.\NJe moet eenvoudige v
+ ormen met behulp van code kunnen maken.\NJe moet eenvoudige SVG-code
+  kunnen analyseren.\NJe moet weten wat tags, elementen, attributen e
+ n waarden zijn in SVG-code\NJe moet met behulp van een code-editor e
+ en eenvoudige vectorafbeelding kunnen maken.\NJe moet met behulp van
+  een tekstverwerkingsprogramma een eenvoudige vectorafbeelding kunne
+ n maken.\NJe moet een vectorafbeelding kunnen gebruiken om krachten 
+ te ontbinden.\NJe moet bij benadering kunnen aangeven hoe spankracht
+ en en buigkrachten werken bij tuibruggen, boogbruggen, hangbruggen, 
+ kraagbruggen en vakwerkbruggen.\NJe moet een min of meer stabiele br
+ ug kunnen schetsen.\NJe moet met behulp van een lijmpistool en spagh
+ etti een spaghettibrug kunnen maken.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43915840
+DTSTART;TZID=Europe/Amsterdam:20241104T083000
+SUMMARY:dynamiek: abiotische & biotische factoren, ± 1 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/abiotische-biotis
+ che-factoren":https://www.digineum.nl/canonical/abiotische-biotische
+ -factoren
+DESCRIPTION:Leerdoelen\N\NJe moet het verschil tussen abiotische en 
+ biotische factoren weten.\NJe moet weten hoe je een plan van aanpak 
+ moet opzetten.\NJe moet weten dat een onderzoek is opgebouwd uit een
+  vooronderzoek en een onderzoeksopzet.\NJe moet naar aanleiding van 
+ een oriëntatie een hypothese kunnen opstellen.\NJe moet op een bepa
+ alde locatie de relatie kunnen leggen tussen het humusgehalte en het
+  type vegetatie.\NJe moet op een bepaalde locatie de relatie kunnen 
+ leggen tussen het zoutgehalte en het type vegetatie.\NJe moet op een
+  bepaalde locatie de relatie kunnen leggen tussen het vochtgehalte e
+ n het type vegetatie.\NJe moet op een bepaalde locatie de relatie ku
+ nnen leggen tussen het kalkgehalte en het type vegetatie.\NJe moet o
+ p een bepaalde locatie de relatie kunnen leggen tussen het zilte win
+ d en het type vegetatie.\NJe moet op een bepaalde locatie de relatie
+  kunnen leggen tussen het doorlaatbaarheid van de boden en het type 
+ vegetatie.\NJe moet naar aanleiding van biotische factoren een hypot
+ hese die je hebt opgesteld naar aanleiding van abiotische factoren g
+ egrond kunnen aannemen of verwerpen.\NJe moet naar aanleiding van wa
+ arnemingen uit je onderzoek een conclusie kunnen trekken.\NJe moet w
+ eten wat natriumchloride (NaCl) is en dat natriumchloride (NaCl) opl
+ ost in water.\NJe moet weten dat opgelost natriumchloride (NaCl) uit
+ eenvalt in Natrium -ionen en (Na+) Chloor -ionen (Cl-).\NJe moet wet
+ en dat ionen in een wateroplossing zorgen voor stroomgeleiding.\NJe 
+ moet weten wat calciumcarbonaat (CaCO)3) is en dat calciumcarbonaat 
+ oplost in een zure omgeving.\NJe moet weten wat zoutzuur of watersto
+ fchloride (HCl) is.\NJe moet weten wat zoutzuur (HCl) een gevaarlijk
+ e en bijtende stof is die brandwonden kan veroorzaken.\NJe moet wete
+ n dat waterstofchloride (HCl) in water de volgende vorm heeft: HCl +
+  H2O → H3O+ + Cl-\NJe moet weten dat calciumcarbonaat (CaCO)3) rea
+ geert met waterstofchloride (HCl): CaCO3 + 2H3O+ + Cl- → CO2 + Ca2
+ + + 2Cl- 3H2O\NJe moet met een navigatie-app kunnen navigeren door d
+ e duinen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43917593
+DTSTART;TZID=Europe/Amsterdam:20241104T083000
+SUMMARY:systemen: expertgroepen, ± 1 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43919e61
+DTSTART;TZID=Europe/Amsterdam:20241111T083000
+SUMMARY:systemen: expertgroepen, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4391c1c4
+DTSTART;TZID=Europe/Amsterdam:20241118T083000
+SUMMARY:systemen: expertgroepen, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4391dea0
+DTSTART;TZID=Europe/Amsterdam:20241125T083000
+SUMMARY:systemen: expertgroepen, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4391f594
+DTSTART;TZID=Europe/Amsterdam:20241202T083000
+SUMMARY:systemen: expertgroepen, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43920fbd
+DTSTART;TZID=Europe/Amsterdam:20241209T083000
+SUMMARY:systemen: expertgroepen, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43922aa2
+DTSTART;TZID=Europe/Amsterdam:20241216T083000
+SUMMARY:systemen: expertgroepen, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4392455a
+DTSTART;TZID=Europe/Amsterdam:20250106T083000
+SUMMARY:systemen: expertgroepen, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43925d23
+DTSTART;TZID=Europe/Amsterdam:20250113T083000
+SUMMARY:systemen: expertgroepen, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43927313
+DTSTART;TZID=Europe/Amsterdam:20250120T083000
+SUMMARY:systemen: expertgroepen, ± 3 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/expertgroepen":ht
+ tps://www.digineum.nl/canonical/expertgroepen
+DESCRIPTION:Leerdoelen\N\NJe moet voldoende informatievaardigheden b
+ eschikken om aan de hand van biologische begrippen de functie en wer
+ king van orgaanstelsels kunnen achterhalen.\NJe moet biologische con
+ cepten schematisch weer kunnen geven.\NJe moet met schematische vect
+ ortekeningen kunnen maken.\NJe moet kunnen werken met Google Forms (
+ o.i.d.)\NJe moet toetsvragen kunnen maken aan de hand van een biolog
+ ische context.\NJe moet aan de hand van een rubric materiaal van med
+ e leerlingen kunnen beoordelen.\NJe moet kunnen werken met chromakey
+ .\NJe moet een informatieve video aantrekkelijk kunnen maken voor le
+ eftijdsgenoten.\NJe moet kunnen werken met een code editor (bijvoorb
+ eeld Sublime text)\NJe moet de basisvaardigheden voor het maken van 
+ eenvoudige website beheersen en kunnen toepassen.\NJe moet kunnen we
+ rken met bestandsbeheer.\NJe moet de lay-out van een tekst kunnen om
+ zetten in HTML.\NJe moet een website kunnen opmaken met behulp van e
+ en stylesheet.\NJe moet afbeeldingen en video’s in een website kun
+ nen plaatsen.\NJe moet een eenvoudige navigatie op een website kunne
+ n plaatsen.\NJe moet problemen die je tegenkomt bij het maken van CS
+ S en HTML kunnen oplossen met behulp van de website w3schools.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb439288ca
+DTSTART;TZID=Europe/Amsterdam:20250120T083000
+SUMMARY:organisatie: organisatieniveaus, ± 1 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/organisatieniveau
+ s":https://www.digineum.nl/canonical/organisatieniveaus
+DESCRIPTION:Leerdoelen\N\NJe moet de organisatieniveau en biologisch
+ e eenheden kunnen benoemen en herkennen.\NJe moet weten wat een emer
+ gente eigenschap is.\NJe moet de hoofdthema's van de biologie kennen
+  en kunnen omschrijven.\NJe moet biologische hoofdthema's op alle or
+ ganisatieniveaus kunnen toepassen.\NJe moet weten wat een context is
+ .\NJe moet emergente eigenschappen kunnen herkennen in een context.\
+ NJe moet hoofdthema's uit de biologie kunnen herkennen in een contex
+ t.\NJe moet weten wat volumeprocent (% vol.) is en je moet kunnen re
+ kenen met volumeprocenten.\NJe moet weten wat massaconcentratie (ρA
+ ) is en je moet kunnen rekenen met massaconcentratie.\NJe moet weten
+  wat dichtheid (ρ) is en je moet kunnen rekenen met dichtheid.\NJe 
+ moet weten dat één mol bestaat uit 6,02214*1023 deeltjes.\NJe moet
+  kunnen rekenen met molen.\NJe moet de reactievergelijking van fotos
+ ynthese kloppend kunnen maken.\NJe moet weten wat alcoholgisting is.
+ \NJe moet de reactievergelijking van alcoholgisting kloppend kunnen 
+ maken.\NJe moet kunnen uitleggen hoe destilleren werkt.\NJe moet het
+  verschil tussen condensatie en verdampen weten.\NJe moet een eigen 
+ onderzoek naar alcoholgisting met behulp van Coach 7 kunnen opzetten
+ \NJe moet weten wat diffusie is.\NJe kunt een relatie leggen tussen 
+ massaconcentratie en diffusie.\NJe moet kunnen aangeven waar de diff
+ usiesnelheid van afhankelijk is.\NJe moet een eigenonderzoek naar di
+ ffusiesnelheid kunnen opzetten.\NJe moet een gefundeerde discussie k
+ unnen opzetten naar aanleiding van je onderzoek.\NJe moet weten wat 
+ osmose is.\NJe moet het begrip osmose kunnen toepassen in context.\N
+ Je moet begrippen als osmotische druk en osmotische waarde kunnen to
+ epassen binnen het begrip osmose.\NJe moet kunnen uitleggen waarom o
+ smose de diffusie van water door een semipermeabel membraan tegen he
+ t concentratieverval in is.\NJe moet weten wat actief en passief tra
+ nsport is.\NJe moet weten welke rol energiecarriers spelen bij actie
+ f transport.\NJe moet weten dat ATP energie afgeeft in een energiear
+ me omgeving en dat ADP energie opneemt in een energierijke omgeving.
+ \NJe moet een eigen onderzoek kunnen opzetten waarbij je de kopfrequ
+ entie van de kloppende vacuole van een pantoffeldiertje beïnvloed.
+ 
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43929cb4
+DTSTART;TZID=Europe/Amsterdam:20250127T083000
+SUMMARY:organisatie: organisatieniveaus, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/organisatieniveau
+ s":https://www.digineum.nl/canonical/organisatieniveaus
+DESCRIPTION:Leerdoelen\N\NJe moet de organisatieniveau en biologisch
+ e eenheden kunnen benoemen en herkennen.\NJe moet weten wat een emer
+ gente eigenschap is.\NJe moet de hoofdthema's van de biologie kennen
+  en kunnen omschrijven.\NJe moet biologische hoofdthema's op alle or
+ ganisatieniveaus kunnen toepassen.\NJe moet weten wat een context is
+ .\NJe moet emergente eigenschappen kunnen herkennen in een context.\
+ NJe moet hoofdthema's uit de biologie kunnen herkennen in een contex
+ t.\NJe moet weten wat volumeprocent (% vol.) is en je moet kunnen re
+ kenen met volumeprocenten.\NJe moet weten wat massaconcentratie (ρA
+ ) is en je moet kunnen rekenen met massaconcentratie.\NJe moet weten
+  wat dichtheid (ρ) is en je moet kunnen rekenen met dichtheid.\NJe 
+ moet weten dat één mol bestaat uit 6,02214*1023 deeltjes.\NJe moet
+  kunnen rekenen met molen.\NJe moet de reactievergelijking van fotos
+ ynthese kloppend kunnen maken.\NJe moet weten wat alcoholgisting is.
+ \NJe moet de reactievergelijking van alcoholgisting kloppend kunnen 
+ maken.\NJe moet kunnen uitleggen hoe destilleren werkt.\NJe moet het
+  verschil tussen condensatie en verdampen weten.\NJe moet een eigen 
+ onderzoek naar alcoholgisting met behulp van Coach 7 kunnen opzetten
+ \NJe moet weten wat diffusie is.\NJe kunt een relatie leggen tussen 
+ massaconcentratie en diffusie.\NJe moet kunnen aangeven waar de diff
+ usiesnelheid van afhankelijk is.\NJe moet een eigenonderzoek naar di
+ ffusiesnelheid kunnen opzetten.\NJe moet een gefundeerde discussie k
+ unnen opzetten naar aanleiding van je onderzoek.\NJe moet weten wat 
+ osmose is.\NJe moet het begrip osmose kunnen toepassen in context.\N
+ Je moet begrippen als osmotische druk en osmotische waarde kunnen to
+ epassen binnen het begrip osmose.\NJe moet kunnen uitleggen waarom o
+ smose de diffusie van water door een semipermeabel membraan tegen he
+ t concentratieverval in is.\NJe moet weten wat actief en passief tra
+ nsport is.\NJe moet weten welke rol energiecarriers spelen bij actie
+ f transport.\NJe moet weten dat ATP energie afgeeft in een energiear
+ me omgeving en dat ADP energie opneemt in een energierijke omgeving.
+ \NJe moet een eigen onderzoek kunnen opzetten waarbij je de kopfrequ
+ entie van de kloppende vacuole van een pantoffeldiertje beïnvloed.
+ 
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4392b042
+DTSTART;TZID=Europe/Amsterdam:20250203T083000
+SUMMARY:organisatie: organisatieniveaus, ± 3 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/organisatieniveau
+ s":https://www.digineum.nl/canonical/organisatieniveaus
+DESCRIPTION:Leerdoelen\N\NJe moet de organisatieniveau en biologisch
+ e eenheden kunnen benoemen en herkennen.\NJe moet weten wat een emer
+ gente eigenschap is.\NJe moet de hoofdthema's van de biologie kennen
+  en kunnen omschrijven.\NJe moet biologische hoofdthema's op alle or
+ ganisatieniveaus kunnen toepassen.\NJe moet weten wat een context is
+ .\NJe moet emergente eigenschappen kunnen herkennen in een context.\
+ NJe moet hoofdthema's uit de biologie kunnen herkennen in een contex
+ t.\NJe moet weten wat volumeprocent (% vol.) is en je moet kunnen re
+ kenen met volumeprocenten.\NJe moet weten wat massaconcentratie (ρA
+ ) is en je moet kunnen rekenen met massaconcentratie.\NJe moet weten
+  wat dichtheid (ρ) is en je moet kunnen rekenen met dichtheid.\NJe 
+ moet weten dat één mol bestaat uit 6,02214*1023 deeltjes.\NJe moet
+  kunnen rekenen met molen.\NJe moet de reactievergelijking van fotos
+ ynthese kloppend kunnen maken.\NJe moet weten wat alcoholgisting is.
+ \NJe moet de reactievergelijking van alcoholgisting kloppend kunnen 
+ maken.\NJe moet kunnen uitleggen hoe destilleren werkt.\NJe moet het
+  verschil tussen condensatie en verdampen weten.\NJe moet een eigen 
+ onderzoek naar alcoholgisting met behulp van Coach 7 kunnen opzetten
+ \NJe moet weten wat diffusie is.\NJe kunt een relatie leggen tussen 
+ massaconcentratie en diffusie.\NJe moet kunnen aangeven waar de diff
+ usiesnelheid van afhankelijk is.\NJe moet een eigenonderzoek naar di
+ ffusiesnelheid kunnen opzetten.\NJe moet een gefundeerde discussie k
+ unnen opzetten naar aanleiding van je onderzoek.\NJe moet weten wat 
+ osmose is.\NJe moet het begrip osmose kunnen toepassen in context.\N
+ Je moet begrippen als osmotische druk en osmotische waarde kunnen to
+ epassen binnen het begrip osmose.\NJe moet kunnen uitleggen waarom o
+ smose de diffusie van water door een semipermeabel membraan tegen he
+ t concentratieverval in is.\NJe moet weten wat actief en passief tra
+ nsport is.\NJe moet weten welke rol energiecarriers spelen bij actie
+ f transport.\NJe moet weten dat ATP energie afgeeft in een energiear
+ me omgeving en dat ADP energie opneemt in een energierijke omgeving.
+ \NJe moet een eigen onderzoek kunnen opzetten waarbij je de kopfrequ
+ entie van de kloppende vacuole van een pantoffeldiertje beïnvloed.
+ 
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4392c3c5
+DTSTART;TZID=Europe/Amsterdam:20250203T083000
+SUMMARY:organisatie: desoxyribonucleinezuur, ± 1 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/desoxyribonuclein
+ ezuur":https://www.digineum.nl/canonical/desoxyribonucleinezuur
+DESCRIPTION:Leerdoelen\N\NJe moet het verschil kunnen aangeven tusse
+ n erfelijke en niet erfelijke eigenschappen.\NJe het verschil tussen
+  genotype en fenotype kunnen aangeven.\NJe moet kunnen aangeven wann
+ eer iemand drager van een erfelijke eigenschap is.\NJe moet weten wa
+ t chromosomen zijn en dat in chromosomen DNA is opgeslagen.\NJe moet
+  weten dat in elke lichaamscel van een organisme alle erfelijke eige
+ nschappen van dat organisme is op geslagen in het DNA op de chromoso
+ men.\NJe moet weten wat machinetaal is en wat een compiler is.\NJe m
+ oet de functie van transistoren weten en je moet kunnen aangeven wel
+ ke rol transitoren spelen bij het opslaan van informatie bij compute
+ rsystemen.\NJe moet weten uit welke bouwstenen DNA is opgebouwd.\NJe
+  moet weten uit welke atomen DNA is opgebouwd.\NJe moet weten welke 
+ nucleotiden een rol spelen bij DNA.\NJe moet weten dat de genetische
+  code vastligt in de nucleotidevolgorde in het DNA-molecuul.\NJe moe
+ t zelf met behulp van molecuuldozen een DNA-molecuul kunnen bouwen.\
+ NJe moet DNA uit een kiwi kunnen extraheren.\NJe moet weten dan gene
+ n bestaan uit twee allelen die elk op een van de chromosomen van een
+  chromosoompaar liggen.\NJe moet het verschil tussen mitose en meios
+ e kunnen aangeven.\NJe moet het verschil tussen stamcellen, moederce
+ llen en dochtercellen kunnen aangeven.\NJe moet het verschil tussen 
+ haploïd en diploïd kunnen uitleggen.\NJe moet wat gameten zijn en 
+ je moet kunnen uitleggen waarom in gameten chromosomen enkelvoudig v
+ oorkomen.\NJe moet de formule 2n kunnen uitleggen en toepassen.\NJe 
+ moet het verschil tussen geslachtelijke en ongeslachtelijke voortpla
+ nting kunnen aangeven .\NJe moet kunnen uitleggen waarom meer geneti
+ sche variatie ontstaat bij geslachtelijke voortplanting.\NJe moet ku
+ nnen uitleggen wat wordt bedoeld met de overerving van genen.\NJe mo
+ et kunnen aangeven wanneer een allel dominant en wanneer een allel r
+ ecessief overerft.\NJe moet kunnen uitleggen wat homozygoot dominant
+ , homozygoot recessief en heterozygoot is.\NJe moet kunnen aangeven 
+ welke allelen in gameten kunnen voorkomen.\NJe moet een monohybride 
+ kruising kunnen uitvoeren en interpreteren.\NJe moet een dihybride k
+ ruising kunnen uitvoeren en interpreteren.\NJe moet weten wat geslac
+ htschromosomen zijn.\NJe moet een X-chromosomale kruising kunnen uit
+ voeren en interpreteren.\NJe moet een stamboom kunnen maken en inter
+ preteren.\NJe moet een presentatie kunnen maken waarin je de relatie
+  tussen DNA, genetica, genetische variatie, natuurlijke selectie en 
+ mutatie aan de ene kant en reproductie en evolutie aan de andere kan
+ t kunt leggen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4392e4c0
+DTSTART;TZID=Europe/Amsterdam:20250210T083000
+SUMMARY:organisatie: desoxyribonucleinezuur, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/desoxyribonuclein
+ ezuur":https://www.digineum.nl/canonical/desoxyribonucleinezuur
+DESCRIPTION:Leerdoelen\N\NJe moet het verschil kunnen aangeven tusse
+ n erfelijke en niet erfelijke eigenschappen.\NJe het verschil tussen
+  genotype en fenotype kunnen aangeven.\NJe moet kunnen aangeven wann
+ eer iemand drager van een erfelijke eigenschap is.\NJe moet weten wa
+ t chromosomen zijn en dat in chromosomen DNA is opgeslagen.\NJe moet
+  weten dat in elke lichaamscel van een organisme alle erfelijke eige
+ nschappen van dat organisme is op geslagen in het DNA op de chromoso
+ men.\NJe moet weten wat machinetaal is en wat een compiler is.\NJe m
+ oet de functie van transistoren weten en je moet kunnen aangeven wel
+ ke rol transitoren spelen bij het opslaan van informatie bij compute
+ rsystemen.\NJe moet weten uit welke bouwstenen DNA is opgebouwd.\NJe
+  moet weten uit welke atomen DNA is opgebouwd.\NJe moet weten welke 
+ nucleotiden een rol spelen bij DNA.\NJe moet weten dat de genetische
+  code vastligt in de nucleotidevolgorde in het DNA-molecuul.\NJe moe
+ t zelf met behulp van molecuuldozen een DNA-molecuul kunnen bouwen.\
+ NJe moet DNA uit een kiwi kunnen extraheren.\NJe moet weten dan gene
+ n bestaan uit twee allelen die elk op een van de chromosomen van een
+  chromosoompaar liggen.\NJe moet het verschil tussen mitose en meios
+ e kunnen aangeven.\NJe moet het verschil tussen stamcellen, moederce
+ llen en dochtercellen kunnen aangeven.\NJe moet het verschil tussen 
+ haploïd en diploïd kunnen uitleggen.\NJe moet wat gameten zijn en 
+ je moet kunnen uitleggen waarom in gameten chromosomen enkelvoudig v
+ oorkomen.\NJe moet de formule 2n kunnen uitleggen en toepassen.\NJe 
+ moet het verschil tussen geslachtelijke en ongeslachtelijke voortpla
+ nting kunnen aangeven .\NJe moet kunnen uitleggen waarom meer geneti
+ sche variatie ontstaat bij geslachtelijke voortplanting.\NJe moet ku
+ nnen uitleggen wat wordt bedoeld met de overerving van genen.\NJe mo
+ et kunnen aangeven wanneer een allel dominant en wanneer een allel r
+ ecessief overerft.\NJe moet kunnen uitleggen wat homozygoot dominant
+ , homozygoot recessief en heterozygoot is.\NJe moet kunnen aangeven 
+ welke allelen in gameten kunnen voorkomen.\NJe moet een monohybride 
+ kruising kunnen uitvoeren en interpreteren.\NJe moet een dihybride k
+ ruising kunnen uitvoeren en interpreteren.\NJe moet weten wat geslac
+ htschromosomen zijn.\NJe moet een X-chromosomale kruising kunnen uit
+ voeren en interpreteren.\NJe moet een stamboom kunnen maken en inter
+ preteren.\NJe moet een presentatie kunnen maken waarin je de relatie
+  tussen DNA, genetica, genetische variatie, natuurlijke selectie en 
+ mutatie aan de ene kant en reproductie en evolutie aan de andere kan
+ t kunt leggen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb439303eb
+DTSTART;TZID=Europe/Amsterdam:20250217T083000
+SUMMARY:organisatie: desoxyribonucleinezuur, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/desoxyribonuclein
+ ezuur":https://www.digineum.nl/canonical/desoxyribonucleinezuur
+DESCRIPTION:Leerdoelen\N\NJe moet het verschil kunnen aangeven tusse
+ n erfelijke en niet erfelijke eigenschappen.\NJe het verschil tussen
+  genotype en fenotype kunnen aangeven.\NJe moet kunnen aangeven wann
+ eer iemand drager van een erfelijke eigenschap is.\NJe moet weten wa
+ t chromosomen zijn en dat in chromosomen DNA is opgeslagen.\NJe moet
+  weten dat in elke lichaamscel van een organisme alle erfelijke eige
+ nschappen van dat organisme is op geslagen in het DNA op de chromoso
+ men.\NJe moet weten wat machinetaal is en wat een compiler is.\NJe m
+ oet de functie van transistoren weten en je moet kunnen aangeven wel
+ ke rol transitoren spelen bij het opslaan van informatie bij compute
+ rsystemen.\NJe moet weten uit welke bouwstenen DNA is opgebouwd.\NJe
+  moet weten uit welke atomen DNA is opgebouwd.\NJe moet weten welke 
+ nucleotiden een rol spelen bij DNA.\NJe moet weten dat de genetische
+  code vastligt in de nucleotidevolgorde in het DNA-molecuul.\NJe moe
+ t zelf met behulp van molecuuldozen een DNA-molecuul kunnen bouwen.\
+ NJe moet DNA uit een kiwi kunnen extraheren.\NJe moet weten dan gene
+ n bestaan uit twee allelen die elk op een van de chromosomen van een
+  chromosoompaar liggen.\NJe moet het verschil tussen mitose en meios
+ e kunnen aangeven.\NJe moet het verschil tussen stamcellen, moederce
+ llen en dochtercellen kunnen aangeven.\NJe moet het verschil tussen 
+ haploïd en diploïd kunnen uitleggen.\NJe moet wat gameten zijn en 
+ je moet kunnen uitleggen waarom in gameten chromosomen enkelvoudig v
+ oorkomen.\NJe moet de formule 2n kunnen uitleggen en toepassen.\NJe 
+ moet het verschil tussen geslachtelijke en ongeslachtelijke voortpla
+ nting kunnen aangeven .\NJe moet kunnen uitleggen waarom meer geneti
+ sche variatie ontstaat bij geslachtelijke voortplanting.\NJe moet ku
+ nnen uitleggen wat wordt bedoeld met de overerving van genen.\NJe mo
+ et kunnen aangeven wanneer een allel dominant en wanneer een allel r
+ ecessief overerft.\NJe moet kunnen uitleggen wat homozygoot dominant
+ , homozygoot recessief en heterozygoot is.\NJe moet kunnen aangeven 
+ welke allelen in gameten kunnen voorkomen.\NJe moet een monohybride 
+ kruising kunnen uitvoeren en interpreteren.\NJe moet een dihybride k
+ ruising kunnen uitvoeren en interpreteren.\NJe moet weten wat geslac
+ htschromosomen zijn.\NJe moet een X-chromosomale kruising kunnen uit
+ voeren en interpreteren.\NJe moet een stamboom kunnen maken en inter
+ preteren.\NJe moet een presentatie kunnen maken waarin je de relatie
+  tussen DNA, genetica, genetische variatie, natuurlijke selectie en 
+ mutatie aan de ene kant en reproductie en evolutie aan de andere kan
+ t kunt leggen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43932274
+DTSTART;TZID=Europe/Amsterdam:20250303T083000
+SUMMARY:organisatie: desoxyribonucleinezuur, ± 1 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/desoxyribonuclein
+ ezuur":https://www.digineum.nl/canonical/desoxyribonucleinezuur
+DESCRIPTION:Leerdoelen\N\NJe moet het verschil kunnen aangeven tusse
+ n erfelijke en niet erfelijke eigenschappen.\NJe het verschil tussen
+  genotype en fenotype kunnen aangeven.\NJe moet kunnen aangeven wann
+ eer iemand drager van een erfelijke eigenschap is.\NJe moet weten wa
+ t chromosomen zijn en dat in chromosomen DNA is opgeslagen.\NJe moet
+  weten dat in elke lichaamscel van een organisme alle erfelijke eige
+ nschappen van dat organisme is op geslagen in het DNA op de chromoso
+ men.\NJe moet weten wat machinetaal is en wat een compiler is.\NJe m
+ oet de functie van transistoren weten en je moet kunnen aangeven wel
+ ke rol transitoren spelen bij het opslaan van informatie bij compute
+ rsystemen.\NJe moet weten uit welke bouwstenen DNA is opgebouwd.\NJe
+  moet weten uit welke atomen DNA is opgebouwd.\NJe moet weten welke 
+ nucleotiden een rol spelen bij DNA.\NJe moet weten dat de genetische
+  code vastligt in de nucleotidevolgorde in het DNA-molecuul.\NJe moe
+ t zelf met behulp van molecuuldozen een DNA-molecuul kunnen bouwen.\
+ NJe moet DNA uit een kiwi kunnen extraheren.\NJe moet weten dan gene
+ n bestaan uit twee allelen die elk op een van de chromosomen van een
+  chromosoompaar liggen.\NJe moet het verschil tussen mitose en meios
+ e kunnen aangeven.\NJe moet het verschil tussen stamcellen, moederce
+ llen en dochtercellen kunnen aangeven.\NJe moet het verschil tussen 
+ haploïd en diploïd kunnen uitleggen.\NJe moet wat gameten zijn en 
+ je moet kunnen uitleggen waarom in gameten chromosomen enkelvoudig v
+ oorkomen.\NJe moet de formule 2n kunnen uitleggen en toepassen.\NJe 
+ moet het verschil tussen geslachtelijke en ongeslachtelijke voortpla
+ nting kunnen aangeven .\NJe moet kunnen uitleggen waarom meer geneti
+ sche variatie ontstaat bij geslachtelijke voortplanting.\NJe moet ku
+ nnen uitleggen wat wordt bedoeld met de overerving van genen.\NJe mo
+ et kunnen aangeven wanneer een allel dominant en wanneer een allel r
+ ecessief overerft.\NJe moet kunnen uitleggen wat homozygoot dominant
+ , homozygoot recessief en heterozygoot is.\NJe moet kunnen aangeven 
+ welke allelen in gameten kunnen voorkomen.\NJe moet een monohybride 
+ kruising kunnen uitvoeren en interpreteren.\NJe moet een dihybride k
+ ruising kunnen uitvoeren en interpreteren.\NJe moet weten wat geslac
+ htschromosomen zijn.\NJe moet een X-chromosomale kruising kunnen uit
+ voeren en interpreteren.\NJe moet een stamboom kunnen maken en inter
+ preteren.\NJe moet een presentatie kunnen maken waarin je de relatie
+  tussen DNA, genetica, genetische variatie, natuurlijke selectie en 
+ mutatie aan de ene kant en reproductie en evolutie aan de andere kan
+ t kunt leggen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4393403e
+DTSTART;TZID=Europe/Amsterdam:20250303T083000
+SUMMARY:organisatie: ethologie, ± 3 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/ethologie":https:
+ //www.digineum.nl/canonical/ethologie
+DESCRIPTION:Leerdoelen\N\NJe moet voorbeelden kunnen noemen van inte
+ racties op verschillende organisatieniveaus.\NJe moet weten wat gedr
+ ag is en welke organismen gedrag vertonen\NJe moet weten dat de stud
+ ie naar gedrag ethologie heet.\NJe moet weten wat een prikkel en een
+  respons zijn en je moet een prikkel en een respons kunnen herkennen
+  in een gegeven situatie.\NJe moet weten wat een black box bij ethol
+ ogie inhoudt.\NJe moet weten wat een prikkel en een respons is.\NJe 
+ moet handelingen in gedrag kunnen onderscheiden.\NJe moet in bepaald
+ e handelingen in gedragsketens kunnen herkennen.\NJe moet in bepaald
+ e handelingen en gedragsketens in gedragssystemen kunnen herkennen.\
+ NJe moet zelf een situatie kunnen bedenken waarin handelingen, gedra
+ gsketens en een gedragssysteem voorkomen.\NJe moet een gedrag feitel
+ ijk en objectief kunnen beschrijven.\NJe moet een ethogram en een pr
+ otocol kunnen herkennen.\NJe moet de oorzaken voor gedrag en voorbee
+ lden hiervan kunnen geven.\NJe moet weten welke rol interne factoren
+ , externe factoren en motivatie bij het ontstaan van gedrag spelen.\
+ NJe moet weten op wat voor een manier licht en temperatuur het gedra
+ g van dieren kunnen beïnvloeden en je moet hiervan voorbeelden kunn
+ en noemen.\NJe moet weten 'trial en error', conditioneren, inzicht, 
+ imitatie, gewenning en inprenting is en je moet zelf voorbeelden kun
+ nen bedenken.\NJe moet een slapstick kunnen maken waarin 'trial en e
+ rror', conditioneren, inzicht, imitatie, gewenning en inprenting een
+  rol spelen.\NJe moet weten wat sociaal gedrag is en welke rol prikk
+ els en signalen hierbij spelen.\NJe moet verschillen kunnen noemen t
+ ussen signalen die honden en signalen die katten gebruiken.\NJe moet
+  kunnen uitleggen dat dieren kunnen communiceren zonder dat dieren m
+ et elkaar kunnen praten.\NJe moet kunnen uitleggen dat gedrag kan wo
+ rden beïnvloed door reclame.\NJe moet een verband kunnen leggen tus
+ sen surfgedrag op internet, big data en machinelearning.\NJe moet ku
+ nnen uitleggen wat een informatiebubbel is.\NJe moet kunnen uitlegge
+ n wat territoriumgedrag is en waarom dieren territoriumgedrag verton
+ en.\NJe moet kunnen uitleggen wat is rangorde is bij sociale dieren.
+ \NJe moet kunnen uitleggen wat een pikorde is.\NJe moet verschillen 
+ tussen dreiggedrag, imponeergedrag en verzoeningsgedrag kunnen noeme
+ n en je moet in afbeeldingen of beschrijvingen deze begrippen kunnen
+  herkennen.\NJe moet kunnen uitleggen wat baltsgedrag is.\NJe moet k
+ unnen uitleggen wat geritualiseerd gedrag is.\NJe moet kunnen uitleg
+ gen wat is conflictgedrag is.\NJe moet verschillen tussen ambivalent
+  gedrag, overspronggedrag en omgericht gedrag kunnen noemen en je mo
+ et in afbeeldingen of beschrijvingen deze begrippen kunnen herkennen
+ .\NJe moet kunnen uitleggen welke rol taakverdeling speelt bij gedra
+ g.\NJe moet een slapstick kunnen maken waarin de volgende sociaal ge
+ drag voorkomt: rangorde, verzoeningsgedrag, imponeergedrag, dreigged
+ rag, conflictgedrag, ambivalent gedrag, overspronggedrag, omgericht 
+ gedrag, territoriumgedrag, vluchtgedrag, aanvalsgedrag, taakverdelin
+ g, baltsgedrag.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43935376
+DTSTART;TZID=Europe/Amsterdam:20250310T083000
+SUMMARY:organisatie: ethologie, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/ethologie":https:
+ //www.digineum.nl/canonical/ethologie
+DESCRIPTION:Leerdoelen\N\NJe moet voorbeelden kunnen noemen van inte
+ racties op verschillende organisatieniveaus.\NJe moet weten wat gedr
+ ag is en welke organismen gedrag vertonen\NJe moet weten dat de stud
+ ie naar gedrag ethologie heet.\NJe moet weten wat een prikkel en een
+  respons zijn en je moet een prikkel en een respons kunnen herkennen
+  in een gegeven situatie.\NJe moet weten wat een black box bij ethol
+ ogie inhoudt.\NJe moet weten wat een prikkel en een respons is.\NJe 
+ moet handelingen in gedrag kunnen onderscheiden.\NJe moet in bepaald
+ e handelingen in gedragsketens kunnen herkennen.\NJe moet in bepaald
+ e handelingen en gedragsketens in gedragssystemen kunnen herkennen.\
+ NJe moet zelf een situatie kunnen bedenken waarin handelingen, gedra
+ gsketens en een gedragssysteem voorkomen.\NJe moet een gedrag feitel
+ ijk en objectief kunnen beschrijven.\NJe moet een ethogram en een pr
+ otocol kunnen herkennen.\NJe moet de oorzaken voor gedrag en voorbee
+ lden hiervan kunnen geven.\NJe moet weten welke rol interne factoren
+ , externe factoren en motivatie bij het ontstaan van gedrag spelen.\
+ NJe moet weten op wat voor een manier licht en temperatuur het gedra
+ g van dieren kunnen beïnvloeden en je moet hiervan voorbeelden kunn
+ en noemen.\NJe moet weten 'trial en error', conditioneren, inzicht, 
+ imitatie, gewenning en inprenting is en je moet zelf voorbeelden kun
+ nen bedenken.\NJe moet een slapstick kunnen maken waarin 'trial en e
+ rror', conditioneren, inzicht, imitatie, gewenning en inprenting een
+  rol spelen.\NJe moet weten wat sociaal gedrag is en welke rol prikk
+ els en signalen hierbij spelen.\NJe moet verschillen kunnen noemen t
+ ussen signalen die honden en signalen die katten gebruiken.\NJe moet
+  kunnen uitleggen dat dieren kunnen communiceren zonder dat dieren m
+ et elkaar kunnen praten.\NJe moet kunnen uitleggen dat gedrag kan wo
+ rden beïnvloed door reclame.\NJe moet een verband kunnen leggen tus
+ sen surfgedrag op internet, big data en machinelearning.\NJe moet ku
+ nnen uitleggen wat een informatiebubbel is.\NJe moet kunnen uitlegge
+ n wat territoriumgedrag is en waarom dieren territoriumgedrag verton
+ en.\NJe moet kunnen uitleggen wat is rangorde is bij sociale dieren.
+ \NJe moet kunnen uitleggen wat een pikorde is.\NJe moet verschillen 
+ tussen dreiggedrag, imponeergedrag en verzoeningsgedrag kunnen noeme
+ n en je moet in afbeeldingen of beschrijvingen deze begrippen kunnen
+  herkennen.\NJe moet kunnen uitleggen wat baltsgedrag is.\NJe moet k
+ unnen uitleggen wat geritualiseerd gedrag is.\NJe moet kunnen uitleg
+ gen wat is conflictgedrag is.\NJe moet verschillen tussen ambivalent
+  gedrag, overspronggedrag en omgericht gedrag kunnen noemen en je mo
+ et in afbeeldingen of beschrijvingen deze begrippen kunnen herkennen
+ .\NJe moet kunnen uitleggen welke rol taakverdeling speelt bij gedra
+ g.\NJe moet een slapstick kunnen maken waarin de volgende sociaal ge
+ drag voorkomt: rangorde, verzoeningsgedrag, imponeergedrag, dreigged
+ rag, conflictgedrag, ambivalent gedrag, overspronggedrag, omgericht 
+ gedrag, territoriumgedrag, vluchtgedrag, aanvalsgedrag, taakverdelin
+ g, baltsgedrag.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb43936553
+DTSTART;TZID=Europe/Amsterdam:20250317T083000
+SUMMARY:organisatie: ethologie, ± 1 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/ethologie":https:
+ //www.digineum.nl/canonical/ethologie
+DESCRIPTION:Leerdoelen\N\NJe moet voorbeelden kunnen noemen van inte
+ racties op verschillende organisatieniveaus.\NJe moet weten wat gedr
+ ag is en welke organismen gedrag vertonen\NJe moet weten dat de stud
+ ie naar gedrag ethologie heet.\NJe moet weten wat een prikkel en een
+  respons zijn en je moet een prikkel en een respons kunnen herkennen
+  in een gegeven situatie.\NJe moet weten wat een black box bij ethol
+ ogie inhoudt.\NJe moet weten wat een prikkel en een respons is.\NJe 
+ moet handelingen in gedrag kunnen onderscheiden.\NJe moet in bepaald
+ e handelingen in gedragsketens kunnen herkennen.\NJe moet in bepaald
+ e handelingen en gedragsketens in gedragssystemen kunnen herkennen.\
+ NJe moet zelf een situatie kunnen bedenken waarin handelingen, gedra
+ gsketens en een gedragssysteem voorkomen.\NJe moet een gedrag feitel
+ ijk en objectief kunnen beschrijven.\NJe moet een ethogram en een pr
+ otocol kunnen herkennen.\NJe moet de oorzaken voor gedrag en voorbee
+ lden hiervan kunnen geven.\NJe moet weten welke rol interne factoren
+ , externe factoren en motivatie bij het ontstaan van gedrag spelen.\
+ NJe moet weten op wat voor een manier licht en temperatuur het gedra
+ g van dieren kunnen beïnvloeden en je moet hiervan voorbeelden kunn
+ en noemen.\NJe moet weten 'trial en error', conditioneren, inzicht, 
+ imitatie, gewenning en inprenting is en je moet zelf voorbeelden kun
+ nen bedenken.\NJe moet een slapstick kunnen maken waarin 'trial en e
+ rror', conditioneren, inzicht, imitatie, gewenning en inprenting een
+  rol spelen.\NJe moet weten wat sociaal gedrag is en welke rol prikk
+ els en signalen hierbij spelen.\NJe moet verschillen kunnen noemen t
+ ussen signalen die honden en signalen die katten gebruiken.\NJe moet
+  kunnen uitleggen dat dieren kunnen communiceren zonder dat dieren m
+ et elkaar kunnen praten.\NJe moet kunnen uitleggen dat gedrag kan wo
+ rden beïnvloed door reclame.\NJe moet een verband kunnen leggen tus
+ sen surfgedrag op internet, big data en machinelearning.\NJe moet ku
+ nnen uitleggen wat een informatiebubbel is.\NJe moet kunnen uitlegge
+ n wat territoriumgedrag is en waarom dieren territoriumgedrag verton
+ en.\NJe moet kunnen uitleggen wat is rangorde is bij sociale dieren.
+ \NJe moet kunnen uitleggen wat een pikorde is.\NJe moet verschillen 
+ tussen dreiggedrag, imponeergedrag en verzoeningsgedrag kunnen noeme
+ n en je moet in afbeeldingen of beschrijvingen deze begrippen kunnen
+  herkennen.\NJe moet kunnen uitleggen wat baltsgedrag is.\NJe moet k
+ unnen uitleggen wat geritualiseerd gedrag is.\NJe moet kunnen uitleg
+ gen wat is conflictgedrag is.\NJe moet verschillen tussen ambivalent
+  gedrag, overspronggedrag en omgericht gedrag kunnen noemen en je mo
+ et in afbeeldingen of beschrijvingen deze begrippen kunnen herkennen
+ .\NJe moet kunnen uitleggen welke rol taakverdeling speelt bij gedra
+ g.\NJe moet een slapstick kunnen maken waarin de volgende sociaal ge
+ drag voorkomt: rangorde, verzoeningsgedrag, imponeergedrag, dreigged
+ rag, conflictgedrag, ambivalent gedrag, overspronggedrag, omgericht 
+ gedrag, territoriumgedrag, vluchtgedrag, aanvalsgedrag, taakverdelin
+ g, baltsgedrag.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4393764d
+DTSTART;TZID=Europe/Amsterdam:20250317T083000
+SUMMARY:organisatie: reproductie, ± 3 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/reproductie":http
+ s://www.digineum.nl/canonical/reproductie
+DESCRIPTION:Leerdoelen\N\NJe moet kunnen aangeven hoe het manbeeld e
+ n vrouwbeeld in de loop van de jaren is veranderd.\NJe moet stereoty
+ pen van mannen en vrouwen kunnen noemen.\NJe moet kunnen aangeven ho
+ e plastische ingrepen het zelfbeeld van mensen kan beïnvloeden.\NJe
+  moet weten wat primaire en secundaire geslachtskenmerken zijn.\NJe 
+ moet kunnen aangeven wanneer iemand seksueel volwassen is.\NJe moet 
+ weten wat een alfa-male is.\NJe moet weten wat rolpatronen zijn.\NJe
+  moet de verschillen tussen mannen en vrouwen kunnen aangeven.\NJe m
+ oet weten wat homoseksualiteit en heteroseksualiteit is.\NJe moet de
+  termen waar lhbtqia2s+ voor staat in je eigen woorden kunnen omschr
+ ijven.\NJe moet kunnen uitleggen wat homofoob is.\NJe moet kunnen aa
+ ngeven wat seksueel geweld is.\NJe moet weten wat NIMBY betekent en 
+ wat het inhoud voor slachtoffers.\NJe moet weten wat incest en pedof
+ ilie is.\NJe moet de functie en ligging van de verschillende onderde
+ len van het mannelijk geslachtsorgaan weten.\NJe moet de functie en 
+ ligging van de verschillende onderdelen van het vrouwelijke geslacht
+ sorgaan weten.\NJe moet weten hoe een erectie, orgasme en ejaculatie
+  bij mannen tot stand komt.\NJe moet weten hoe een orgasme bij vrouw
+ en tot stand komt.\NJe moet weten wat zelfbevrediging bij mannen en 
+ vrouwen inhoudt.\NJe moet weten wat het verschil is tussen normale k
+ lieren en hormoonklieren.\NJe moet weten waar de hypofyse ligt.\NJe 
+ moet weten waar de volgende hormonen geproduceerd worden en wat hun 
+ functie is: FSH, LH, oestrogenen progesteron, testosteron.\NJe moet 
+ weten wat negatieve terugkoppeling is.\NJe moet weten hoe eicellen z
+ ich in eierstokken ontwikkelen en welke rol hormonen hierbij spelen.
+ \NJe moet weten hoe het baarmoederslijmvlies zich tijdens de menstru
+ atiecyclus ontwikkelt en welke rol hormonen hierbij spelen.\NJe moet
+  weten wat een zygote, foetus en embryo is.\NJe moet weten waar eice
+ llen bevrucht worden en waar eicellen zich innestelen.\NJe moet wete
+ n wat een placenta, vruchtwater en een hechtsteel is.\NJe in grote l
+ ijnen de ontwikkeling van zygote tot embryo kunnen aangeven.\NJe moe
+ t kunnen aangeven hoe stoffen worden uitgewisseld tussen moeder en k
+ ind in de placenta.\NJe moet weten welke anticonceptiemiddelen er zi
+ jn, of ze beschermen tegen geslachtsziektes en of ze betrouwbaar zij
+ n.\NJe moet weten wat sterilisatie is en hoe sterilisatie bij mannen
+  en vrouwen plaatsvindt.\NJe moet weten wat een morning-after pil, p
+ echspiraaltje, overtijdbehandeling, curettage zijn en op welk moment
+  je moet gebruiken.\NJe moet kunnen aangeven wat een abortus is en w
+ aarom een abortus een ingrijpende ingreep is.\NJe moet aan de hand v
+ an een lijst onderwerpen een kwartetspel kunnen maken en spelen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb439386ae
+DTSTART;TZID=Europe/Amsterdam:20250324T083000
+SUMMARY:organisatie: reproductie, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/reproductie":http
+ s://www.digineum.nl/canonical/reproductie
+DESCRIPTION:Leerdoelen\N\NJe moet kunnen aangeven hoe het manbeeld e
+ n vrouwbeeld in de loop van de jaren is veranderd.\NJe moet stereoty
+ pen van mannen en vrouwen kunnen noemen.\NJe moet kunnen aangeven ho
+ e plastische ingrepen het zelfbeeld van mensen kan beïnvloeden.\NJe
+  moet weten wat primaire en secundaire geslachtskenmerken zijn.\NJe 
+ moet kunnen aangeven wanneer iemand seksueel volwassen is.\NJe moet 
+ weten wat een alfa-male is.\NJe moet weten wat rolpatronen zijn.\NJe
+  moet de verschillen tussen mannen en vrouwen kunnen aangeven.\NJe m
+ oet weten wat homoseksualiteit en heteroseksualiteit is.\NJe moet de
+  termen waar lhbtqia2s+ voor staat in je eigen woorden kunnen omschr
+ ijven.\NJe moet kunnen uitleggen wat homofoob is.\NJe moet kunnen aa
+ ngeven wat seksueel geweld is.\NJe moet weten wat NIMBY betekent en 
+ wat het inhoud voor slachtoffers.\NJe moet weten wat incest en pedof
+ ilie is.\NJe moet de functie en ligging van de verschillende onderde
+ len van het mannelijk geslachtsorgaan weten.\NJe moet de functie en 
+ ligging van de verschillende onderdelen van het vrouwelijke geslacht
+ sorgaan weten.\NJe moet weten hoe een erectie, orgasme en ejaculatie
+  bij mannen tot stand komt.\NJe moet weten hoe een orgasme bij vrouw
+ en tot stand komt.\NJe moet weten wat zelfbevrediging bij mannen en 
+ vrouwen inhoudt.\NJe moet weten wat het verschil is tussen normale k
+ lieren en hormoonklieren.\NJe moet weten waar de hypofyse ligt.\NJe 
+ moet weten waar de volgende hormonen geproduceerd worden en wat hun 
+ functie is: FSH, LH, oestrogenen progesteron, testosteron.\NJe moet 
+ weten wat negatieve terugkoppeling is.\NJe moet weten hoe eicellen z
+ ich in eierstokken ontwikkelen en welke rol hormonen hierbij spelen.
+ \NJe moet weten hoe het baarmoederslijmvlies zich tijdens de menstru
+ atiecyclus ontwikkelt en welke rol hormonen hierbij spelen.\NJe moet
+  weten wat een zygote, foetus en embryo is.\NJe moet weten waar eice
+ llen bevrucht worden en waar eicellen zich innestelen.\NJe moet wete
+ n wat een placenta, vruchtwater en een hechtsteel is.\NJe in grote l
+ ijnen de ontwikkeling van zygote tot embryo kunnen aangeven.\NJe moe
+ t kunnen aangeven hoe stoffen worden uitgewisseld tussen moeder en k
+ ind in de placenta.\NJe moet weten welke anticonceptiemiddelen er zi
+ jn, of ze beschermen tegen geslachtsziektes en of ze betrouwbaar zij
+ n.\NJe moet weten wat sterilisatie is en hoe sterilisatie bij mannen
+  en vrouwen plaatsvindt.\NJe moet weten wat een morning-after pil, p
+ echspiraaltje, overtijdbehandeling, curettage zijn en op welk moment
+  je moet gebruiken.\NJe moet kunnen aangeven wat een abortus is en w
+ aarom een abortus een ingrijpende ingreep is.\NJe moet aan de hand v
+ an een lijst onderwerpen een kwartetspel kunnen maken en spelen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb439396f7
+DTSTART;TZID=Europe/Amsterdam:20250331T083000
+SUMMARY:organisatie: reproductie, ± 3 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/reproductie":http
+ s://www.digineum.nl/canonical/reproductie
+DESCRIPTION:Leerdoelen\N\NJe moet kunnen aangeven hoe het manbeeld e
+ n vrouwbeeld in de loop van de jaren is veranderd.\NJe moet stereoty
+ pen van mannen en vrouwen kunnen noemen.\NJe moet kunnen aangeven ho
+ e plastische ingrepen het zelfbeeld van mensen kan beïnvloeden.\NJe
+  moet weten wat primaire en secundaire geslachtskenmerken zijn.\NJe 
+ moet kunnen aangeven wanneer iemand seksueel volwassen is.\NJe moet 
+ weten wat een alfa-male is.\NJe moet weten wat rolpatronen zijn.\NJe
+  moet de verschillen tussen mannen en vrouwen kunnen aangeven.\NJe m
+ oet weten wat homoseksualiteit en heteroseksualiteit is.\NJe moet de
+  termen waar lhbtqia2s+ voor staat in je eigen woorden kunnen omschr
+ ijven.\NJe moet kunnen uitleggen wat homofoob is.\NJe moet kunnen aa
+ ngeven wat seksueel geweld is.\NJe moet weten wat NIMBY betekent en 
+ wat het inhoud voor slachtoffers.\NJe moet weten wat incest en pedof
+ ilie is.\NJe moet de functie en ligging van de verschillende onderde
+ len van het mannelijk geslachtsorgaan weten.\NJe moet de functie en 
+ ligging van de verschillende onderdelen van het vrouwelijke geslacht
+ sorgaan weten.\NJe moet weten hoe een erectie, orgasme en ejaculatie
+  bij mannen tot stand komt.\NJe moet weten hoe een orgasme bij vrouw
+ en tot stand komt.\NJe moet weten wat zelfbevrediging bij mannen en 
+ vrouwen inhoudt.\NJe moet weten wat het verschil is tussen normale k
+ lieren en hormoonklieren.\NJe moet weten waar de hypofyse ligt.\NJe 
+ moet weten waar de volgende hormonen geproduceerd worden en wat hun 
+ functie is: FSH, LH, oestrogenen progesteron, testosteron.\NJe moet 
+ weten wat negatieve terugkoppeling is.\NJe moet weten hoe eicellen z
+ ich in eierstokken ontwikkelen en welke rol hormonen hierbij spelen.
+ \NJe moet weten hoe het baarmoederslijmvlies zich tijdens de menstru
+ atiecyclus ontwikkelt en welke rol hormonen hierbij spelen.\NJe moet
+  weten wat een zygote, foetus en embryo is.\NJe moet weten waar eice
+ llen bevrucht worden en waar eicellen zich innestelen.\NJe moet wete
+ n wat een placenta, vruchtwater en een hechtsteel is.\NJe in grote l
+ ijnen de ontwikkeling van zygote tot embryo kunnen aangeven.\NJe moe
+ t kunnen aangeven hoe stoffen worden uitgewisseld tussen moeder en k
+ ind in de placenta.\NJe moet weten welke anticonceptiemiddelen er zi
+ jn, of ze beschermen tegen geslachtsziektes en of ze betrouwbaar zij
+ n.\NJe moet weten wat sterilisatie is en hoe sterilisatie bij mannen
+  en vrouwen plaatsvindt.\NJe moet weten wat een morning-after pil, p
+ echspiraaltje, overtijdbehandeling, curettage zijn en op welk moment
+  je moet gebruiken.\NJe moet kunnen aangeven wat een abortus is en w
+ aarom een abortus een ingrijpende ingreep is.\NJe moet aan de hand v
+ an een lijst onderwerpen een kwartetspel kunnen maken en spelen.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4393a7b0
+DTSTART;TZID=Europe/Amsterdam:20250331T083000
+SUMMARY:regulatie: optica & gezichtszintuig, ± 1 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/optica-gezichtszi
+ ntuig":https://www.digineum.nl/canonical/optica-gezichtszintuig
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat je met de lichtkleuren r
+ ood, groen en blauw alle andere kleuren kunt mengen.\NJe moet weten 
+ dat als een lichtbundel van ene stof naar een andere stof gaat er vr
+ ijwel altijd breking optreedt op het grensvlak van de twee stoffen.\
+ NJe moet de wet van Snellius kunnen toepassen.\NJe moet kunnen opzoe
+ ken wat de brekingsindex bij de overgang tussen verschillende stoffe
+ n.\NJe moet de brekingsindex kunnen bepalen op het grensvlak waar li
+ cht breekt tussen twee verschillende stoffen.\NJe moet de sinus van 
+ een hoek kunnen uitrekenen met een rekenmachine.\NJe moet aan de han
+ d van sinus van een hoek met je rekenmachine de hoek kunnen bepalen 
+ (sin-1)\NJe moet de sinus van een hoek kunnen opzoeken in een sinust
+ abel\NJe moet als je de sinus weet de hoek kunnen opzoeken in een si
+ nustabel.\NJe moet met behulp van een laserpen de wet van Snellius k
+ unnen aantonen.\NJe moet de spiegelwet kunnen toepassen.\NJe moet he
+ t verschil weten tussen de hoek van inval en de hoek van terugkaatsi
+ ng.\NJe moet het blikveld vanuit een bepaald standpunt kunnen bepale
+ n.\NJe moet de spiegelwet kunnen toepassen.\NJe moet de functies van
+  de onderdelen van het uitwendig oog kunnen opzoeken.\NJe moet de fu
+ ncties van de onderdelen van het inwendig oog kunnen opzoeken.\NJe m
+ oet weten welke spieren in de iris spannen en ontspannen als de pupi
+ l groter of kleiner wordt.\NJe moet weten welke oogspieren spannen a
+ ls naar een voorwerp dichtbij of veraf kijkt.\NJe moet weten welke o
+ ogspieren spannen als je naar een willekeurig object in de ruimte ki
+ jkt.\NJe moet weten wat stereoscopie is.\NJe moet weten wat accommod
+ eren is.\NJe moet weten wanneer de ooglens bol of plat is.\NJe moet 
+ weten hoe beeldvorming in de hersenen plaatsvindt.\NJe moet de lensf
+ ormule kunnen toepassen op een positieve (bolle) lens.\NJe moet met 
+ behulp van een laserpen het brandpunt van een lens kunnen bepalen.\N
+ Je moet de vergroting bij een bolle lens kunnen uitrekenen.\NJe moet
+  de lenssterkte van een lens kunnen uitrekenen.\NJe moet de lensster
+ kte van de ooglens kunnen bepalen als je scherpstellen op een bepaal
+ de afstand.\NJe moet kunnen uitleggen waarom je een object vergroot 
+ waarneemt door een positieve (bolle) lens.\NJe moet kunnen uitleggen
+  waarom een waterdruppel werkt als een positieve lens.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4393b864
+DTSTART;TZID=Europe/Amsterdam:20250407T083000
+SUMMARY:regulatie: optica & gezichtszintuig, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/optica-gezichtszi
+ ntuig":https://www.digineum.nl/canonical/optica-gezichtszintuig
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat je met de lichtkleuren r
+ ood, groen en blauw alle andere kleuren kunt mengen.\NJe moet weten 
+ dat als een lichtbundel van ene stof naar een andere stof gaat er vr
+ ijwel altijd breking optreedt op het grensvlak van de twee stoffen.\
+ NJe moet de wet van Snellius kunnen toepassen.\NJe moet kunnen opzoe
+ ken wat de brekingsindex bij de overgang tussen verschillende stoffe
+ n.\NJe moet de brekingsindex kunnen bepalen op het grensvlak waar li
+ cht breekt tussen twee verschillende stoffen.\NJe moet de sinus van 
+ een hoek kunnen uitrekenen met een rekenmachine.\NJe moet aan de han
+ d van sinus van een hoek met je rekenmachine de hoek kunnen bepalen 
+ (sin-1)\NJe moet de sinus van een hoek kunnen opzoeken in een sinust
+ abel\NJe moet als je de sinus weet de hoek kunnen opzoeken in een si
+ nustabel.\NJe moet met behulp van een laserpen de wet van Snellius k
+ unnen aantonen.\NJe moet de spiegelwet kunnen toepassen.\NJe moet he
+ t verschil weten tussen de hoek van inval en de hoek van terugkaatsi
+ ng.\NJe moet het blikveld vanuit een bepaald standpunt kunnen bepale
+ n.\NJe moet de spiegelwet kunnen toepassen.\NJe moet de functies van
+  de onderdelen van het uitwendig oog kunnen opzoeken.\NJe moet de fu
+ ncties van de onderdelen van het inwendig oog kunnen opzoeken.\NJe m
+ oet weten welke spieren in de iris spannen en ontspannen als de pupi
+ l groter of kleiner wordt.\NJe moet weten welke oogspieren spannen a
+ ls naar een voorwerp dichtbij of veraf kijkt.\NJe moet weten welke o
+ ogspieren spannen als je naar een willekeurig object in de ruimte ki
+ jkt.\NJe moet weten wat stereoscopie is.\NJe moet weten wat accommod
+ eren is.\NJe moet weten wanneer de ooglens bol of plat is.\NJe moet 
+ weten hoe beeldvorming in de hersenen plaatsvindt.\NJe moet de lensf
+ ormule kunnen toepassen op een positieve (bolle) lens.\NJe moet met 
+ behulp van een laserpen het brandpunt van een lens kunnen bepalen.\N
+ Je moet de vergroting bij een bolle lens kunnen uitrekenen.\NJe moet
+  de lenssterkte van een lens kunnen uitrekenen.\NJe moet de lensster
+ kte van de ooglens kunnen bepalen als je scherpstellen op een bepaal
+ de afstand.\NJe moet kunnen uitleggen waarom je een object vergroot 
+ waarneemt door een positieve (bolle) lens.\NJe moet kunnen uitleggen
+  waarom een waterdruppel werkt als een positieve lens.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4393c87a
+DTSTART;TZID=Europe/Amsterdam:20250414T083000
+SUMMARY:regulatie: optica & gezichtszintuig, ± 3 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/optica-gezichtszi
+ ntuig":https://www.digineum.nl/canonical/optica-gezichtszintuig
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat je met de lichtkleuren r
+ ood, groen en blauw alle andere kleuren kunt mengen.\NJe moet weten 
+ dat als een lichtbundel van ene stof naar een andere stof gaat er vr
+ ijwel altijd breking optreedt op het grensvlak van de twee stoffen.\
+ NJe moet de wet van Snellius kunnen toepassen.\NJe moet kunnen opzoe
+ ken wat de brekingsindex bij de overgang tussen verschillende stoffe
+ n.\NJe moet de brekingsindex kunnen bepalen op het grensvlak waar li
+ cht breekt tussen twee verschillende stoffen.\NJe moet de sinus van 
+ een hoek kunnen uitrekenen met een rekenmachine.\NJe moet aan de han
+ d van sinus van een hoek met je rekenmachine de hoek kunnen bepalen 
+ (sin-1)\NJe moet de sinus van een hoek kunnen opzoeken in een sinust
+ abel\NJe moet als je de sinus weet de hoek kunnen opzoeken in een si
+ nustabel.\NJe moet met behulp van een laserpen de wet van Snellius k
+ unnen aantonen.\NJe moet de spiegelwet kunnen toepassen.\NJe moet he
+ t verschil weten tussen de hoek van inval en de hoek van terugkaatsi
+ ng.\NJe moet het blikveld vanuit een bepaald standpunt kunnen bepale
+ n.\NJe moet de spiegelwet kunnen toepassen.\NJe moet de functies van
+  de onderdelen van het uitwendig oog kunnen opzoeken.\NJe moet de fu
+ ncties van de onderdelen van het inwendig oog kunnen opzoeken.\NJe m
+ oet weten welke spieren in de iris spannen en ontspannen als de pupi
+ l groter of kleiner wordt.\NJe moet weten welke oogspieren spannen a
+ ls naar een voorwerp dichtbij of veraf kijkt.\NJe moet weten welke o
+ ogspieren spannen als je naar een willekeurig object in de ruimte ki
+ jkt.\NJe moet weten wat stereoscopie is.\NJe moet weten wat accommod
+ eren is.\NJe moet weten wanneer de ooglens bol of plat is.\NJe moet 
+ weten hoe beeldvorming in de hersenen plaatsvindt.\NJe moet de lensf
+ ormule kunnen toepassen op een positieve (bolle) lens.\NJe moet met 
+ behulp van een laserpen het brandpunt van een lens kunnen bepalen.\N
+ Je moet de vergroting bij een bolle lens kunnen uitrekenen.\NJe moet
+  de lenssterkte van een lens kunnen uitrekenen.\NJe moet de lensster
+ kte van de ooglens kunnen bepalen als je scherpstellen op een bepaal
+ de afstand.\NJe moet kunnen uitleggen waarom je een object vergroot 
+ waarneemt door een positieve (bolle) lens.\NJe moet kunnen uitleggen
+  waarom een waterdruppel werkt als een positieve lens.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4393db12
+DTSTART;TZID=Europe/Amsterdam:20250414T083000
+SUMMARY:regulatie: licht & beeld, ± 1 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/licht-beeld":http
+ s://www.digineum.nl/canonical/licht-beeld
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat fotonen deeltjes zijn di
+ e geen gewicht hebben maar wel energie bevatten.\NJe moet weten dat 
+ licht wat wij kunnen waarnemen slechts een klein deel is van het ele
+ ktromagnetisch spectrum.\NJe moet weten dat licht wordt uitgedrukt i
+ n golflengte. Golflengte wordt uitgedrukt in nanometer.\NJe moet het
+  verschil tussen atomen en elementen weten.\NJe moet weten wat het p
+ eriodiek systeem is en dat elementen in het periodiek systeem zijn g
+ erangschikt op hun atoomnummer\NJe moet weten wat het atoommodel van
+  Bohr is.\NJe moet weten wat elektronenschillen zijn.\NJe moet weten
+  hoeveel elektronen maximaal in de K, L en M schil van een atoom kun
+ nen zitten.\NJe moet weten dat objecten licht kunnen absorberen.\NLi
+ cht dat niet door een object wordt geabsorbeerd wordt teruggekaatst.
+  De kleur van een voorwerp wordt bepaald door kleur van het teruggek
+ aatste licht.\NJe moet het verschil kunnen uitleggen tussen direct e
+ n diffuus licht.\NJe moet het verschil tussen schaduw en halfschaduw
+  kunnen uitleggen.\NJe moet weten dat het netvlies is opgebouwd uit 
+ zintuigcellen en uitlopers van sensorische zenuwcellen.\NJe moet wet
+ en dat zich in het netvlies drie verschillende soorten kegeltjes bev
+ inden. Eén type voor rood, één type voor groen en één type voor
+  blauw licht.\NJe moet weten dat staafjes vooral contrasten en grijs
+ tinten (zwart/wit) waarnemen.\NJe moet weten dat de oogzenuw deel kr
+ uist.\NJe moet kunnen uitleggen welk deel van de ogen in welke herse
+ nhelft verwerkt wordt.\NJe moet weten op welke plek in het netvlies 
+ zich vooral staafjes en op welke plek zich vooral kegeltjes bevinden
+ .\NJe moet kunnen afleiden welke kleuren (golflengte) door welke keg
+ eltjes kunnen worden waargenomen.\NJe moet een relatie tussen kleure
+ nblindheid en type kegeltjes.\NJe moet kunnen uitleggen waarom we ti
+ jdens schemering alleen grijstinten waarnemen en geen kleuren.\NJe m
+ oet kunnen uitleggen dat staafjes een lagere drempelwaarde hebben da
+ n kegeltjes.\NJe moet kunnen uitleggen dat mensen die verziend zijn,
+  geholpen kunnen worden met een bril met positieve brillenglazen.\NJ
+ e moet kunnen uitleggen dat mensen die bijziend zijn, geholpen kunne
+ n worden met een bril met negatieve brillenglazen.\NJe moet kunnen u
+ itleggen waarom een te afgeplatte oogbol zorgt voor een onscherp bee
+ ld.\NJe moet kunnen uitleggen hoe een bril het beeld bij een te afge
+ platte oogbol corrigeert.\NJe moet kunnen uitleggen waarom ouderdoms
+ verziendheid wordt veroorzaakt door een starre ooglens.\NJe moet kun
+ nen uitleggen waarom positieve lenzen convergerend zijn en negatieve
+  lenzen divergerend zijn.\NJe moet kunnen uitleggen hoe vissen scher
+ pstellen op een voorwerp.\NJe moet kunnen uitleggen hoe spinnen sche
+ rpstellen op een voorwerp.\NJe moet kunnen uitleggen hoe een facetoo
+ g werkt.\NJe moet een relatie kunnen leggen tussen de lichtsterkte e
+ n de hoeveelheid impulsen die ontstaan.\NJe moet weten wat bedoelt w
+ ordt met impulsfrequentie.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4393eb75
+DTSTART;TZID=Europe/Amsterdam:20250505T083000
+SUMMARY:regulatie: licht & beeld, ± 4 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/licht-beeld":http
+ s://www.digineum.nl/canonical/licht-beeld
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat fotonen deeltjes zijn di
+ e geen gewicht hebben maar wel energie bevatten.\NJe moet weten dat 
+ licht wat wij kunnen waarnemen slechts een klein deel is van het ele
+ ktromagnetisch spectrum.\NJe moet weten dat licht wordt uitgedrukt i
+ n golflengte. Golflengte wordt uitgedrukt in nanometer.\NJe moet het
+  verschil tussen atomen en elementen weten.\NJe moet weten wat het p
+ eriodiek systeem is en dat elementen in het periodiek systeem zijn g
+ erangschikt op hun atoomnummer\NJe moet weten wat het atoommodel van
+  Bohr is.\NJe moet weten wat elektronenschillen zijn.\NJe moet weten
+  hoeveel elektronen maximaal in de K, L en M schil van een atoom kun
+ nen zitten.\NJe moet weten dat objecten licht kunnen absorberen.\NLi
+ cht dat niet door een object wordt geabsorbeerd wordt teruggekaatst.
+  De kleur van een voorwerp wordt bepaald door kleur van het teruggek
+ aatste licht.\NJe moet het verschil kunnen uitleggen tussen direct e
+ n diffuus licht.\NJe moet het verschil tussen schaduw en halfschaduw
+  kunnen uitleggen.\NJe moet weten dat het netvlies is opgebouwd uit 
+ zintuigcellen en uitlopers van sensorische zenuwcellen.\NJe moet wet
+ en dat zich in het netvlies drie verschillende soorten kegeltjes bev
+ inden. Eén type voor rood, één type voor groen en één type voor
+  blauw licht.\NJe moet weten dat staafjes vooral contrasten en grijs
+ tinten (zwart/wit) waarnemen.\NJe moet weten dat de oogzenuw deel kr
+ uist.\NJe moet kunnen uitleggen welk deel van de ogen in welke herse
+ nhelft verwerkt wordt.\NJe moet weten op welke plek in het netvlies 
+ zich vooral staafjes en op welke plek zich vooral kegeltjes bevinden
+ .\NJe moet kunnen afleiden welke kleuren (golflengte) door welke keg
+ eltjes kunnen worden waargenomen.\NJe moet een relatie tussen kleure
+ nblindheid en type kegeltjes.\NJe moet kunnen uitleggen waarom we ti
+ jdens schemering alleen grijstinten waarnemen en geen kleuren.\NJe m
+ oet kunnen uitleggen dat staafjes een lagere drempelwaarde hebben da
+ n kegeltjes.\NJe moet kunnen uitleggen dat mensen die verziend zijn,
+  geholpen kunnen worden met een bril met positieve brillenglazen.\NJ
+ e moet kunnen uitleggen dat mensen die bijziend zijn, geholpen kunne
+ n worden met een bril met negatieve brillenglazen.\NJe moet kunnen u
+ itleggen waarom een te afgeplatte oogbol zorgt voor een onscherp bee
+ ld.\NJe moet kunnen uitleggen hoe een bril het beeld bij een te afge
+ platte oogbol corrigeert.\NJe moet kunnen uitleggen waarom ouderdoms
+ verziendheid wordt veroorzaakt door een starre ooglens.\NJe moet kun
+ nen uitleggen waarom positieve lenzen convergerend zijn en negatieve
+  lenzen divergerend zijn.\NJe moet kunnen uitleggen hoe vissen scher
+ pstellen op een voorwerp.\NJe moet kunnen uitleggen hoe spinnen sche
+ rpstellen op een voorwerp.\NJe moet kunnen uitleggen hoe een facetoo
+ g werkt.\NJe moet een relatie kunnen leggen tussen de lichtsterkte e
+ n de hoeveelheid impulsen die ontstaan.\NJe moet weten wat bedoelt w
+ ordt met impulsfrequentie.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20241003T151153Z
+UID:66feb4393fa90
+DTSTART;TZID=Europe/Amsterdam:20250512T083000
+SUMMARY:regulatie: licht & beeld, ± 3 uur
+LOCATION;ALTREP="https://www.digineum.nl/canonical/licht-beeld":http
+ s://www.digineum.nl/canonical/licht-beeld
+DESCRIPTION:Leerdoelen\N\NJe moet weten dat fotonen deeltjes zijn di
+ e geen gewicht hebben maar wel energie bevatten.\NJe moet weten dat 
+ licht wat wij kunnen waarnemen slechts een klein deel is van het ele
+ ktromagnetisch spectrum.\NJe moet weten dat licht wordt uitgedrukt i
+ n golflengte. Golflengte wordt uitgedrukt in nanometer.\NJe moet het
+  verschil tussen atomen en elementen weten.\NJe moet weten wat het p
+ eriodiek systeem is en dat elementen in het periodiek systeem zijn g
+ erangschikt op hun atoomnummer\NJe moet weten wat het atoommodel van
+  Bohr is.\NJe moet weten wat elektronenschillen zijn.\NJe moet weten
+  hoeveel elektronen maximaal in de K, L en M schil van een atoom kun
+ nen zitten.\NJe moet weten dat objecten licht kunnen absorberen.\NLi
+ cht dat niet door een object wordt geabsorbeerd wordt teruggekaatst.
+  De kleur van een voorwerp wordt bepaald door kleur van het teruggek
+ aatste licht.\NJe moet het verschil kunnen uitleggen tussen direct e
+ n diffuus licht.\NJe moet het verschil tussen schaduw en halfschaduw
+  kunnen uitleggen.\NJe moet weten dat het netvlies is opgebouwd uit 
+ zintuigcellen en uitlopers van sensorische zenuwcellen.\NJe moet wet
+ en dat zich in het netvlies drie verschillende soorten kegeltjes bev
+ inden. Eén type voor rood, één type voor groen en één type voor
+  blauw licht.\NJe moet weten dat staafjes vooral contrasten en grijs
+ tinten (zwart/wit) waarnemen.\NJe moet weten dat de oogzenuw deel kr
+ uist.\NJe moet kunnen uitleggen welk deel van de ogen in welke herse
+ nhelft verwerkt wordt.\NJe moet weten op welke plek in het netvlies 
+ zich vooral staafjes en op welke plek zich vooral kegeltjes bevinden
+ .\NJe moet kunnen afleiden welke kleuren (golflengte) door welke keg
+ eltjes kunnen worden waargenomen.\NJe moet een relatie tussen kleure
+ nblindheid en type kegeltjes.\NJe moet kunnen uitleggen waarom we ti
+ jdens schemering alleen grijstinten waarnemen en geen kleuren.\NJe m
+ oet kunnen uitleggen dat staafjes een lagere drempelwaarde hebben da
+ n kegeltjes.\NJe moet kunnen uitleggen dat mensen die verziend zijn,
+  geholpen kunnen worden met een bril met positieve brillenglazen.\NJ
+ e moet kunnen uitleggen dat mensen die bijziend zijn, geholpen kunne
+ n worden met een bril met negatieve brillenglazen.\NJe moet kunnen u
+ itleggen waarom een te afgeplatte oogbol zorgt voor een onscherp bee
+ ld.\NJe moet kunnen uitleggen hoe een bril het beeld bij een te afge
+ platte oogbol corrigeert.\NJe moet kunnen uitleggen waarom ouderdoms
+ verziendheid wordt veroorzaakt door een starre ooglens.\NJe moet kun
+ nen uitleggen waarom positieve lenzen convergerend zijn en negatieve
+  lenzen divergerend zijn.\NJe moet kunnen uitleggen hoe vissen scher
+ pstellen op een voorwerp.\NJe moet kunnen uitleggen hoe spinnen sche
+ rpstellen op een voorwerp.\NJe moet kunnen uitleggen hoe een facetoo
+ g werkt.\NJe moet een relatie kunnen leggen tussen de lichtsterkte e
+ n de hoeveelheid impulsen die ontstaan.\NJe moet weten wat bedoelt w
+ ordt met impulsfrequentie.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

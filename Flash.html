@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard App</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            background-color: #f7f9fd;
+        }
+        .container {
+            width: 90vw;
+            max-width: 62.5em;
+            position: relative;
+            margin: auto;
+        }
+        .add-flashcard-con {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1.2em 1em;
+        }
+        button {
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .add-flashcard-con button {
+            font-size: 1em;
+            background-color: #587ef4;
+            color: #ffffff;
+            padding: 0.8em 1.2em;
+            font-weight: 500;
+            border-radius: 0.4em;
+        }
+        #card-con {
+            margin-top: 1em;
+        }
+        .question-container {
+            width: 90vw;
+            max-width: 34em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #ffffff;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            padding: 3em 2em;
+            border-radius: 0.6em;
+            box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+        }
+        .question-container h2 {
+            font-size: 2.2em;
+            color: #363d55;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 11fr 1fr;
+            gap: 1em;
+            margin-bottom: 1em;
+        }
+        .error-con {
+            align-self: center;
+        }
+        #error {
+            color: #ff5353;
+            font-weight: 400;
+        }
+        .fa-xmark {
+            font-size: 1.4em;
+            background-color: #587ef4;
+            height: 1.8em;
+            width: 1.8em;
+            display: grid;
+            place-items: center;
+            color: #ffffff;
+            border-radius: 50%;
+            cursor: pointer;
+            justify-self: flex-end;
+        }
+        label {
+            color: #363d55;
+            font-weight: 600;
+            margin-bottom: 0.3em;
+        }
+        textarea {
+            width: 100%;
+            padding: 0.7em 0.5em;
+            border: 1px solid #d0d0d0;
+            outline: none;
+            color: #414a67;
+            border-radius: 0.3em;
+            resize: none;
+        }
+        textarea:not(:last-child) {
+            margin-bottom: 1.2em;
+        }
+        textarea:focus {
+            border-color: #363d55;
+        }
+        #save-btn {
+            font-size: 1em;
+            background-color: #587ef4;
+            color: #ffffff;
+            padding: 0.6em 0;
+            border-radius: 0.3em;
+            font-weight: 600;
+        }
+        #shuffle-btn, #download-btn, #upload-label {
+            margin-left: 1em;
+            font-size: 1em;
+            background-color: #ff9f43;
+            color: #ffffff;
+            padding: 0.6em 1em;
+            border-radius: 0.3em;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        #upload-btn {
+            display: none;
+        }
+        .card-list-container {
+            display: grid;
+            padding: 0.2em;
+            gap: 1.5em;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .card {
+            background-color: #ffffff;
+            box-shadow: 0 0.4em 1.2em rgba(28, 0, 80, 0.08);
+            padding: 1.2em;
+            border-radius: 0.4em;
+        }
+        .question-div,
+        .answer-div {
+            text-align: justify;
+        }
+        .question-div {
+            margin-bottom: 0.5em;
+            font-weight: 500;
+            color: #363d55;
+        }
+        .answer-div {
+            margin-top: 1em;
+            font-weight: 400;
+            color: #414a67;
+        }
+        .show-hide-btn {
+            display: block;
+            background-color: #587ef4;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            padding: 0.6em 0;
+            border-radius: 0.3em;
+        }
+        .buttons-con {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .edit,
+        .delete {
+            background-color: transparent;
+            padding: 0.5em;
+            font-size: 1.2em;
+        }
+        .edit {
+            color: #587ef4;
+        }
+        .delete {
+            color: #ff5353;
+        }
+        .hide {
+            display: none;
+        }
+        @media screen and (max-width: 800px) {
+            .card-list-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.8em;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            body {
+                font-size: 14px;
+            }
+            .card-list-container {
+                grid-template-columns: 1fr;
+                gap: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="add-flashcard-con">
+            <button id="add-flashcard">Add Flashcard</button>
+            <button id="shuffle-btn">Shuffle Cards</button>
+            <button id="download-btn">Download Flashcards</button>
+            <input type="file" id="upload-btn" accept=".json" />
+            <label for="upload-btn" id="upload-label">Upload Flashcards</label>
+        </div>
+
+        <!-- Display Card of Question And Answers Here -->
+        <div id="card-con">
+            <div class="card-list-container"></div>
+        </div>
+    </div>
+
+    <!-- Input form for users to fill question and answer -->
+    <div class="question-container hide" id="add-question-card">
+        <h2>Add Flashcard</h2>
+        <div class="wrapper">
+            <!-- Error message -->
+            <div class="error-con">
+                <span class="hide" id="error">Input fields cannot be empty!</span>
+            </div>
+            <!-- Close Button -->
+            <i class="fa-solid fa-xmark" id="close-btn"></i>
+        </div>
+
+        <label for="question">Question:</label>
+        <textarea class="input" id="question" placeholder="Type the question here..." rows="2"></textarea>
+        <label for="answer">Answer:</label>
+        <textarea class="input" id="answer" rows="4" placeholder="Type the answer here..."></textarea>
+        <button id="save-btn">Save</button>
+    </div>
+
+    <!-- Script -->
+    <script>
+        const container = document.querySelector(".container");
+        const addQuestionCard = document.getElementById("add-question-card");
+        const cardButton = document.getElementById("save-btn");
+        const question = document.getElementById("question");
+        const answer = document.getElementById("answer");
+        const errorMessage = document.getElementById("error");
+        const addQuestion = document.getElementById("add-flashcard");
+        const closeBtn = document.getElementById("close-btn");
+        const shuffleBtn = document.getElementById("shuffle-btn");
+        const downloadBtn = document.getElementById("download-btn");
+        const uploadBtn = document.getElementById("upload-btn");
+        let editBool = false;
+        let flashcards = [];
+
+        // Add question when user clicks 'Add Flashcard' button
+        addQuestion.addEventListener("click", () => {
+            container.classList.add("hide");
+            question.value = "";
+            answer.value = "";
+            addQuestionCard.classList.remove("hide");
+        });
+
+        // Hide Create flashcard Card
+        closeBtn.addEventListener("click", () => {
+            container.classList.remove("hide");
+            addQuestionCard.classList.add("hide");
+            if (editBool) {
+                editBool = false;
+            }
+        });
+
+        // Save flashcard to array
+        cardButton.addEventListener("click", () => {
+            const questionText = question.value.trim();
+            const answerText = answer.value.trim();
+
+            if (!questionText || !answerText) {
+                errorMessage.classList.remove("hide");
+                return;
+            } else {
+                errorMessage.classList.add("hide");
+            }
+
+            if (editBool) {
+                const index = flashcards.findIndex(f => f.question === questionText && f.answer === answerText);
+                flashcards[index] = { question: questionText, answer: answerText };
+            } else {
+                flashcards.push({ question: questionText, answer: answerText });
+            }
+
+            displayFlashcards();
+            closeBtn.click();
+        });
+
+        // Display flashcards
+        function displayFlashcards() {
+            const cardContainer = document.querySelector(".card-list-container");
+            cardContainer.innerHTML = "";
+
+            flashcards.forEach((flashcard, index) => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+
+                card.innerHTML = `
+                    <div class="question-div">${flashcard.question}</div>
+                    <div class="answer-div hide">${flashcard.answer}</div>
+                    <div class="buttons-con">
+                        <button class="edit" data-index="${index}"><i class="fas fa-edit"></i></button>
+                        <button class="delete" data-index="${index}"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                `;
+
+                card.querySelector(".edit").addEventListener("click", (e) => {
+                    const index = e.target.closest(".edit").dataset.index;
+                    editBool = true;
+                    question.value = flashcards[index].question;
+                    answer.value = flashcards[index].answer;
+                    addQuestionCard.classList.remove("hide");
+                    container.classList.add("hide");
+                });
+
+                card.querySelector(".delete").addEventListener("click", (e) => {
+                    const index = e.target.closest(".delete").dataset.index;
+                    flashcards.splice(index, 1);
+                    displayFlashcards();
+                });
+
+                card.querySelector(".question-div").addEventListener("click", () => {
+                    const answerDiv = card.querySelector(".answer-div");
+                    answerDiv.classList.toggle("hide");
+                });
+
+                cardContainer.appendChild(card);
+            });
+        }
+
+        // Shuffle flashcards when button is clicked
+        shuffleBtn.addEventListener("click", () => {
+            flashcards.sort(() => Math.random() - 0.5);
+            displayFlashcards();
+        });
+
+        // Download flashcards as JSON
+        downloadBtn.addEventListener("click", () => {
+            const dataStr = JSON.stringify(flashcards);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.setAttribute('href', url);
+            a.setAttribute('download', 'flashcards.json');
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+
+        // Upload flashcards from JSON file
+        uploadBtn.addEventListener("change", (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    try {
+                        const uploadedFlashcards = JSON.parse(e.target.result);
+                        flashcards = [...flashcards, ...uploadedFlashcards];
+                        displayFlashcards();
+                    } catch (error) {
+                        alert("Invalid file format. Please upload a valid JSON file.");
+                    }
+                };
+                reader.readAsText(file);
+            }
+        });
+    </script>
+</body>
+</html>

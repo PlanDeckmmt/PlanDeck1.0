@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Importeren</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="file"],
+        input[type="url"] {
+            display: block;
+            margin: 20px auto;
+            width: calc(100% - 40px);
+            padding: 10px;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Importeer Agenda</h1>
+        <p>Importeer een .ics-bestand door een bestand te uploaden of een link naar een .ics-bestand in te voeren:</p>
+        
+        <!-- Bestandinvoer -->
+        <input type="file" id="fileInput" accept=".ics">
+        
+        <!-- URL invoer -->
+        <input type="url" id="urlInput" placeholder="Plak hier de URL van je .ics-bestand">
+        <button id="urlButton">Importeer via URL</button>
+
+        <!-- Tabel voor de agenda items -->
+        <table id="agendaTable">
+            <thead>
+                <tr>
+                    <th>Titel</th>
+                    <th>Datum (Tijd)</th>
+                    <th>Locatie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rijen worden hier toegevoegd -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Functie om ICS-data te verwerken en in een tabel weer te geven
+        function parseICS(content) {
+            // Split de ICS inhoud in lijnen
+            const lines = content.split('\n');
+            const agendaTableBody = document.querySelector('#agendaTable tbody');
+            agendaTableBody.innerHTML = ''; // Leeg de tabel
+
+            let event = {};
+            lines.forEach(line => {
+                if (line.startsWith('BEGIN:VEVENT')) {
+                    event = {}; // Start een nieuw event
+                } else if (line.startsWith('SUMMARY:')) {
+                    event.title = line.replace('SUMMARY:', '').trim();
+                } else if (line.startsWith('DTSTART:')) {
+                    const date = line.replace('DTSTART:', '').trim();
+                    event.date = formatDate(date);
+                } else if (line.startsWith('LOCATION:')) {
+                    event.location = line.replace('LOCATION:', '').trim();
+                } else if (line.startsWith('END:VEVENT')) {
+                    // Voeg het event toe aan de tabel wanneer een event eindigt
+                    addEventToTable(event);
+                }
+            });
+        }
+
+        // Functie om een event toe te voegen aan de tabel
+        function addEventToTable(event) {
+            const agendaTableBody = document.querySelector('#agendaTable tbody');
+            const row = document.createElement('tr');
+
+            const titleCell = document.createElement('td');
+            titleCell.textContent = event.title || 'Geen titel';
+
+            const dateCell = document.createElement('td');
+            dateCell.textContent = event.date || 'Geen datum';
+
+            const locationCell = document.createElement('td');
+            locationCell.textContent = event.location || 'Geen locatie';
+
+            row.appendChild(titleCell);
+            row.appendChild(dateCell);
+            row.appendChild(locationCell);
+
+            agendaTableBody.appendChild(row);
+        }
+
+        // Functie om de datum te formatteren
+        function formatDate(dateString) {
+            const year = dateString.substring(0, 4);
+            const month = dateString.substring(4, 6);
+            const day = dateString.substring(6, 8);
+            let time = '';
+            if (dateString.length > 8) {
+                const hours = dateString.substring(9, 11);
+                const minutes = dateString.substring(11, 13);
+                time = ` ${hours}:${minutes}`;
+            }
+            return `${day}-${month}-${year}${time}`;
+        }
+
+        // Eventlistener voor bestand uploaden
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    parseICS(e.target.result);
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        // Eventlistener voor URL invoer
+        document.getElementById('urlButton').addEventListener('click', function() {
+            const url = document.getElementById('urlInput').value;
+            if (url) {
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Netwerkfout bij het ophalen van het bestand');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        parseICS(data);
+                    })
+                    .catch(error => {
+                        alert('Fout bij het importeren van de agenda: ' + error.message);
+                    });
+            } else {
+                alert('Voer een geldige URL in.');
+            }
+        });
+    </script>
+</body>
+</html>

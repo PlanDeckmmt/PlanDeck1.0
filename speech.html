@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spraak-naar-tekst Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 60px;
+            text-align: center;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #result {
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #status {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Spraak-naar-tekst Generator</h1>
+        <label for="duration">Opnametijd (minuten):</label>
+        <input type="number" id="duration" min="1" max="10" value="1"> <!-- Max 10 minuten -->
+        <br>
+        <button id="record-btn">🎤 Start Opname</button>
+        <p id="status">Klik op de knop om te spreken.</p>
+        <textarea id="result" placeholder="Jouw tekst verschijnt hier..."></textarea>
+    </div>
+
+    <script>
+        window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+        const recordBtn = document.getElementById('record-btn');
+        const statusText = document.getElementById('status');
+        const resultTextarea = document.getElementById('result');
+        const durationInput = document.getElementById('duration');
+
+        const recognition = new SpeechRecognition();
+        recognition.lang = 'nl-NL';  // Standaard Nederlands (NL)
+        recognition.interimResults = true;  // Interim resultaten aanzetten voor live weergave
+        recognition.continuous = true;  // Opname blijft doorgaan
+
+        let recordingTimeout;
+        let isRecording = false;  // Om bij te houden of we opnemen
+        let lastTranscript = "";  // Om de laatste zin op te slaan
+        let finalTranscript = "";  // Voor de uiteindelijke tekst
+
+        // Functie om de eerste letter van een zin te kapitaliseren
+        function capitalizeFirstLetter(text) {
+            return text.charAt(0).toUpperCase() + text.slice(1);
+        }
+
+        // Functie om spelfouten automatisch te corrigeren
+        function autocorrect(text) {
+            // Basiscorrecties zoals veelvoorkomende fouten
+            const corrections = {
+                "ik ben": "Ik ben",
+                "het is": "Het is",
+                "een appel": "een appel", // Voorbeeld, voeg meer correcties toe
+                "hallo": "Hallo"
+                // Voeg hier meer fouten toe die je wilt corrigeren
+            };
+            
+            Object.keys(corrections).forEach(function(key) {
+                const regex = new RegExp("\\b" + key + "\\b", "gi");
+                text = text.replace(regex, corrections[key]);
+            });
+
+            return text;
+        }
+
+        // Functie om automatisch zinsstructuren te formatteren
+        function formatTranscript(transcript) {
+            transcript = transcript.trim();  // Verwijder witruimtes aan het begin en einde
+            if (lastTranscript !== transcript) {  // Alleen toevoegen als het nieuwe tekst is
+                if (transcript.length > 0) {
+                    // Voeg een punt toe als de zin nog geen eindteken heeft
+                    if (!/[.?!]$/.test(transcript)) {
+                        transcript += ".";
+                    }
+
+                    // Hoofdletter voor de eerste letter van de nieuwe zin
+                    transcript = capitalizeFirstLetter(transcript);
+
+                    // Pas automatische correctie toe
+                    transcript = autocorrect(transcript);
+                }
+                return transcript;
+            }
+            return "";  // Leeg als er geen nieuwe tekst is
+        }
+
+        // Start de spraakherkenning
+        recordBtn.addEventListener('click', () => {
+            const recordingTime = parseInt(durationInput.value) * 60 * 1000;  // Zet minuten om naar milliseconden
+
+            isRecording = true;  // Zet de opnamevlag aan
+            recognition.start();
+            statusText.textContent = 'Luisteren... Spreek nu.';
+
+            // Stop de spraakherkenning na de opgegeven tijd (in milliseconden)
+            recordingTimeout = setTimeout(() => {
+                recognition.stop();
+                isRecording = false;  // Zet de opnamevlag uit
+                statusText.textContent = 'Opname automatisch gestopt na ' + durationInput.value + ' minuten.';
+            }, recordingTime);
+        });
+
+        // Als er spraakherkenningsresultaten binnenkomen
+        recognition.addEventListener('result', (event) => {
+            let interimTranscript = '';  // Voor de tussenresultaten
+
+            for (let i = event.resultIndex; i < event.results.length; ++i) {
+                if (event.results[i].isFinal) {
+                    finalTranscript += formatTranscript(event.results[i][0].transcript);
+                    lastTranscript = event.results[i][0].transcript;  // Update de laatste transcriptie
+                } else {
+                    interimTranscript += event.results[i][0].transcript;
+                }
+            }
+
+            // Voeg de nieuwe, geformatteerde tekst toe aan het tekstveld
+            resultTextarea.value = finalTranscript + capitalizeFirstLetter(interimTranscript);
+        });
+
+        // Als de spraakherkenning stopt (bijv. door een pauze), herstart de opname
+        recognition.addEventListener('end', () => {
+            if (isRecording) {
+                recognition.start();  // Herstart de opname als we nog steeds opnemen
+            } else {
+                clearTimeout(recordingTimeout);  // Wis de timeout als de opname stopt
+                statusText.textContent = 'Opname voltooid. Klik om opnieuw te beginnen.';
+            }
+        });
+
+        // Error handling
+        recognition.addEventListener('error', (event) => {
+            clearTimeout(recordingTimeout);  // Reset timeout bij fout
+            statusText.textContent = 'Er is een fout opgetreden: ' + event.error;
+            isRecording = false;  // Stop de opname in geval van een fout
+        });
+    </script>
+</body>
+</html>

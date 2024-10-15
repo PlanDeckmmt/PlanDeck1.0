@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Ophalen</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Donkere achtergrondkleur */
+            color: #e0e0e0; /* Lichte tekstkleur */
+        }
+        h2 {
+            text-align: center;
+            color: #ffffff; /* Witte koptekstkleur */
+            margin-bottom: 30px;
+        }
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #1e1e1e; /* Donkere kleur voor het formulier */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ffffff; /* Witte kleur voor labels */
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #444; /* Donkere randkleur */
+            border-radius: 4px;
+            margin-bottom: 16px;
+            background: #333; /* Donkere achtergrond voor invoervelden */
+            color: #ffffff; /* Witte tekstkleur voor invoervelden */
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            border-color: #007bff; /* Blauwe focuskleur */
+            outline: none;
+        }
+        button {
+            background-color: #007bff; /* Blauwe achtergrondkleur voor de knop */
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3; /* Donkerdere blauwe kleur bij hover */
+        }
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #d9534f; /* Rode kleur voor foutmeldingen */
+        }
+        /* Responsieve stijlen */
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 24px; /* Kleinere fontgrootte op kleine schermen */
+            }
+            form {
+                padding: 15px; /* Minder padding op kleine schermen */
+            }
+            input, button {
+                font-size: 14px; /* Kleinere fontgrootte voor invoervelden en knoppen */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>Ophalen van iCalendar Token</h2>
+
+<form id="tokenForm">
+    <label for="username">Gebruikersnaam:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="user_id">User ID:</label>
+    <input type="text" id="user_id" name="user_id" required>
+
+    <button type="submit">Token ophalen</button>
+</form>
+
+<p id="result"></p>
+
+<script>
+    let data = []; // Om de gebruikersgegevens op te slaan
+
+    // Functie om de JSON-gegevens te laden
+    async function loadData() {
+        const response = await fetch('token.json'); // Zorg ervoor dat dit bestand in dezelfde map staat
+        data = await response.json();
+    }
+
+    // Functie om de token op te halen
+    document.getElementById('tokenForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const userId = document.getElementById('user_id').value;
+        const resultElement = document.getElementById('result');
+
+        // Zoek in de data naar de juiste gebruiker
+        const user = data.find(user => user.username === username && user.user_id === userId);
+
+        if (user) {
+            resultElement.textContent = `Je iCalendar token is: ${user.icalendar_token}`;
+            resultElement.style.color = '#4caf50'; // Groene kleur voor succesvolle meldingen
+        } else {
+            resultElement.textContent = 'Gebruiker niet gevonden. Controleer de gegevens.';
+            resultElement.style.color = '#d9534f'; // Rode kleur voor foutmeldingen
+        }
+    });
+
+    // Laad de gegevens bij het laden van de pagina
+    loadData();
+</script>
+
+</body>
+</html>

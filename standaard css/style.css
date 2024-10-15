@@ -1,0 +1,32 @@
+kleuren verandering: <!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Kleurverandering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Begin met een neutrale achtergrondkleur */
+            color: black;
+            transition: background-color 0.3s, color 0.3s; /* Vloeiende overgang */
+        }
+
+        .theme1 {
+            background-color: #b5cbb7; /* Achtergrondkleur voor thema 1 */
+            color: #132e32; /* Tekstkleur voor thema 1 */
+        }
+
+        .theme2 {
+            background-color: #ffe4e1; /* Achtergrondkleur voor thema 2 */
+            color: #555; /* Tekstkleur voor thema 2 */
+        }
+
+        .theme3 {
+           background-color: #B6A39E;
+           color: #253D5B;
+        }
+
+        }
+    </style>
+

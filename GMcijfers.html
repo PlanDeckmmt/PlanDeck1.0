@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemiddelde Cijfers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .alert {
+            color: red;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: 2px solid #000;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e0e0e0;
+        }
+        .input-container {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 8px;
+            width: 100px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .chart-container {
+            display: flex;
+            align-items: flex-end;
+            height: 300px;
+            margin-top: 20px;
+            border-left: 2px solid #000;
+            background-color: #fff;
+            padding: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .horizontal-line {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #ddd;
+        }
+        .horizontal-line[data-value="1"] { bottom: 30px; }
+        .horizontal-line[data-value="2"] { bottom: 60px; }
+        .horizontal-line[data-value="3"] { bottom: 90px; }
+        .horizontal-line[data-value="4"] { bottom: 120px; }
+        .horizontal-line[data-value="5"] { bottom: 150px; }
+        .horizontal-line[data-value="6"] { bottom: 180px; }
+        .horizontal-line[data-value="7"] { bottom: 210px; }
+        .horizontal-line[data-value="8"] { bottom: 240px; }
+        .horizontal-line[data-value="9"] { bottom: 270px; }
+        .bar {
+            width: 50px;
+            text-align: center;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 5px 5px 0 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin-right: 10px;
+            background: linear-gradient(to top, #e91e63, #4caf50);
+        }
+        .bar span {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: black;
+        }
+        .bolletjes-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        .bolletje {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 2px;
+            transition: background-color 0.3s ease;
+        }
+        .filled {
+            background-color: #4caf50;
+        }
+        /* Geen scrollbar */
+        html, body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gemiddelde cijfers:</h1>
+    <p id="alert" class="alert"></p>
+
+    <div class="input-container">
+        <label for="subject">Vak (2 letters):</label>
+        <input type="text" id="subject" maxlength="2" placeholder="Bijv. EN" required>
+
+        <label for="grade">Cijfer (0.0 - 10.0):</label>
+        <input type="number" id="grade" step="0.1" min="0" max="10" placeholder="Bijv. 7.5" required>
+
+        <button onclick="addGrade()">Cijfer toevoegen</button>
+    </div>
+
+    <div class="chart-container" id="chart-container">
+        <div class="horizontal-line" data-value="1"></div>
+        <div class="horizontal-line" data-value="2"></div>
+        <div class="horizontal-line" data-value="3"></div>
+        <div class="horizontal-line" data-value="4"></div>
+        <div class="horizontal-line" data-value="5"></div>
+        <div class="horizontal-line" data-value="6"></div>
+        <div class="horizontal-line" data-value="7"></div>
+        <div class="horizontal-line" data-value="8"></div>
+        <div class="horizontal-line" data-value="9"></div>
+    </div>
+
+    <!-- Firebase integration -->
+    <script type="module">
+        // Import Firebase and Firestore SDKs
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+        import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "YOUR_FIREBASE_API_KEY",
+          authDomain: "statestieken-9539b.firebaseapp.com",
+          projectId: "statestieken-9539b",
+          storageBucket: "statestieken-9539b.appspot.com",
+          messagingSenderId: "322434051406",
+          appId: "1:322434051406:web:ff37dcd76459b6d909021f"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        let subjects = {};
+
+        // Load grades from Firestore
+        async function loadGrades() {
+            const docRef = doc(db, "grades", "user_grades");
+            const docSnap = await getDoc(docRef);
+
+            if (docSnap.exists()) {
+                subjects = docSnap.data();
+                updateChart();
+            } else {
+                console.log("No such document!");
+            }
+        }
+
+        // Save grades to Firestore
+        async function saveGrades() {
+            const docRef = doc(db, "grades", "user_grades");
+            await setDoc(docRef, subjects);
+            console.log("Grades saved to Firestore");
+        }
+
+        function calculateAverage() {
+            const total = Object.values(subjects).reduce((sum, grade) => sum + grade, 0);
+            return (total / Object.values(subjects).length).toFixed(1);
+        }
+
+        function updateChart() {
+            const chartContainer = document.getElementById('chart-container');
+            chartContainer.innerHTML = `
+                <div class="horizontal-line" data-value="1"></div>
+                <div class="horizontal-line" data-value="2"></div>
+                <div class="horizontal-line" data-value="3"></div>
+                <div class="horizontal-line" data-value="4"></div>
+                <div class="horizontal-line" data-value="5"></div>
+                <div class="horizontal-line" data-value="6"></div>
+                <div class="horizontal-line" data-value="7"></div>
+                <div class="horizontal-line" data-value="8"></div>
+                <div class="horizontal-line" data-value="9"></div>
+            `;
+
+            let alertMessage = '';
+
+            for (const subject in subjects) {
+                const grade = subjects[subject];
+                const bar = document.createElement('div');
+                bar.classList.add('bar');
+                bar.style.height = `${grade * 10}%`;
+                bar.style.background = `linear-gradient(to top, #e91e63 ${(10 - grade) * 10}%, #4caf50 ${grade * 10}%)`;
+                bar.innerHTML = `<span>${subject}</span>`;
+
+                const bolletjesContainer = document.createElement('div');
+                bolletjesContainer.classList.add('bolletjes-container');
+
+                for (let i = 1; i <= 5; i++) {
+                    const bolletje = document.createElement('div');
+                    bolletje.classList.add('bolletje');
+                    if (i <= grade / 2) bolletje.classList.add('filled');
+                    bolletjesContainer.appendChild(bolletje);
+                }
+
+                bar.appendChild(bolletjesContainer);
+
+                if (grade < 5.5) {
+                    alertMessage = `Let op, ${subject} gaat niet goed`;
+                }
+
+                chartContainer.appendChild(bar);
+            }
+
+            const alertElement = document.getElementById('alert');
+            alertElement.textContent = alertMessage || `Gemiddelde cijfer: ${calculateAverage()}`;
+        }
+
+        // Add grade
+        async function addGrade() {
+            const subjectInput = document.getElementById('subject');
+            const gradeInput = document.getElementById('grade');
+
+            const subject = subjectInput.value.toUpperCase();
+            const grade = parseFloat(gradeInput.value);
+
+            if (!/^[A-Z]{2}$/.test(subject)) {
+                alert("Ongeldig vak! Gebruik precies 2 letters.");
+                return;
+            }
+
+            if (isNaN(grade) || grade < 0 || grade > 10) {
+                alert("Ongeldig cijfer!");
+                return;
+            }
+
+            subjects[subject] = grade;
+            await saveGrades();
+            updateChart();
+
+            // Clear input fields
+            subjectInput.value = '';
+            gradeInput.value = '';
+        }
+
+        // Load grades from Firestore on page load
+        loadGrades();
+    </script>
+</body>
+</html>

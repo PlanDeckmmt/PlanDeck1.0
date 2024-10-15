@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boeken Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        button, .add-subject, .add-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover, .add-subject:hover, .add-item:hover {
+            background-color: #45a049;
+        }
+
+        .add-subject {
+            background-color: #007bff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Boeken Tracker</h1>
+
+    <!-- Rooster tabel -->
+    <table>
+        <thead>
+            <tr>
+                <th>Dag</th>
+                <th>Vak(ken)</th>
+                <th>Benodigdheden</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maandag</td>
+                <td>
+                    <ul id="monday-subjects"></ul>
+                    <button class="add-subject" onclick="addSubject('monday')">+ Voeg vak toe</button>
+                </td>
+                <td id="monday-items"></td>
+            </tr>
+            <tr>
+                <td>Dinsdag</td>
+                <td>
+                    <ul id="tuesday-subjects"></ul>
+                    <button class="add-subject" onclick="addSubject('tuesday')">+ Voeg vak toe</button>
+                </td>
+                <td id="tuesday-items"></td>
+            </tr>
+            <tr>
+                <td>Woensdag</td>
+                <td>
+                    <ul id="wednesday-subjects"></ul>
+                    <button class="add-subject" onclick="addSubject('wednesday')">+ Voeg vak toe</button>
+                </td>
+                <td id="wednesday-items"></td>
+            </tr>
+            <tr>
+                <td>Donderdag</td>
+                <td>
+                    <ul id="thursday-subjects"></ul>
+                    <button class="add-subject" onclick="addSubject('thursday')">+ Voeg vak toe</button>
+                </td>
+                <td id="thursday-items"></td>
+            </tr>
+            <tr>
+                <td>Vrijdag</td>
+                <td>
+                    <ul id="friday-subjects"></ul>
+                    <button class="add-subject" onclick="addSubject('friday')">+ Voeg vak toe</button>
+                </td>
+                <td id="friday-items"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Knop om inpaklijst te genereren -->
+    <button onclick="generatePackingList()">Start inpaken</button>
+
+    <!-- Inpaklijst voor vandaag -->
+    <div id="packing-list" class="hidden">
+        <h2>Inpaklijst voor vandaag</h2>
+        <ul id="packing-items"></ul>
+        <button onclick="resetApp()">Reset</button>
+    </div>
+</div>
+
+<script>
+    const schedule = {
+        monday: [],
+        tuesday: [],
+        wednesday: [],
+        thursday: [],
+        friday: []
+    };
+
+    // Functie om een vak toe te voegen
+    function addSubject(day) {
+        const subject = prompt("Voeg vak toe:");
+        if (subject) {
+            const subjectObj = {
+                name: subject,
+                items: []
+            };
+
+            schedule[day].push(subjectObj);
+            updateSubjectList(day);
+        }
+    }
+
+    // Bijwerken van de lijst met vakken en benodigdheden voor de dag
+    function updateSubjectList(day) {
+        const subjectList = document.getElementById(`${day}-subjects`);
+        const itemsCell = document.getElementById(`${day}-items`);
+        subjectList.innerHTML = '';
+        itemsCell.innerHTML = '';
+
+        schedule[day].forEach((subject, index) => {
+            // Maak een li element voor elk vak
+            const subjectLi = document.createElement('li');
+            subjectLi.textContent = subject.name;
+
+            // Voeg benodigdheden knop toe voor elk vak
+            const addItemsButton = document.createElement('button');
+            addItemsButton.textContent = '+ Voeg benodigdheden toe';
+            addItemsButton.classList.add('add-item');
+            addItemsButton.onclick = () => addItem(day, index);
+
+            // Voeg de knop toe onder het vak
+            subjectLi.appendChild(addItemsButton);
+            subjectList.appendChild(subjectLi);
+
+            // Bijwerken van de benodigdheden in de corresponderende cel
+            const itemsUl = document.createElement('ul');
+            subject.items.forEach(item => {
+                const itemLi = document.createElement('li');
+                itemLi.textContent = item;
+                itemsUl.appendChild(itemLi);
+            });
+            itemsCell.appendChild(itemsUl);
+        });
+    }
+
+    // Functie om benodigdheden aan een vak toe te voegen
+    function addItem(day, subjectIndex) {
+        const item = prompt("Voeg benodigdheden toe:");
+        if (item) {
+            schedule[day][subjectIndex].items.push(item);
+            updateSubjectList(day);
+        }
+    }
+
+    // Functie om de inpaklijst te genereren
+    function generatePackingList() {
+        const day = prompt("Voor welke dag wil je de inpaklijst genereren? (Maandag, Dinsdag, etc.)").toLowerCase();
+        const packingList = document.getElementById('packing-items');
+        packingList.innerHTML = '';
+
+        if (schedule[day]) {
+            schedule[day].forEach(subject => {
+                if (subject.items.length > 0) {
+                    subject.items.forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = `${subject.name}: ${item}`;
+                        packingList.appendChild(li);
+                    });
+                }
+            });
+
+            document.getElementById('packing-list').classList.remove('hidden');
+        } else {
+            alert("Ongeldige dag ingevoerd.");
+        }
+    }
+
+    // Reset de app
+    function resetApp() {
+        document.getElementById('packing-list').classList.add('hidden');
+        document.getElementById('packing-items').innerHTML = '';
+    }
+</script>
+
+</body>
+</html>

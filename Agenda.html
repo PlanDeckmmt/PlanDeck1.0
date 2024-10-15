@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Agenda</title>
+    <style>
+        :root {
+            --numHours: 24;
+            --timeHeight: 60px;
+            --calBgColor: #fff1f8;
+            --eventBorderColor: #f2d3d8;
+            --buttonColor: #ff92a1;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .calendar {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto 1fr;
+            margin: 2rem;
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+        }
+
+        .days {
+            display: grid;
+            grid-column: 2;
+            gap: 5px;
+            grid-template-columns: repeat(7, 1fr); /* Altijd alle 7 dagen tonen */
+        }
+
+        .events {
+            display: grid;
+            grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+            border-radius: 5px;
+            background: var(--calBgColor);
+        }
+
+        .day {
+            border-left: 1px solid var(--eventBorderColor);
+        }
+
+        /* Event */
+        .event {
+            border: 1px solid var(--eventBorderColor);
+            border-radius: 5px;
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+            background: white;
+        }
+
+        /* Tijdweergave */
+        .time-marker {
+            height: var(--timeHeight);
+            border-bottom: 1px solid var(--eventBorderColor);
+            text-align: right;
+            padding-right: 10px;
+            font-size: 0.8rem;
+            color: gray;
+        }
+
+        .date {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .date-num {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .date-day {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Buttons styling */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .button-container button {
+            background-color: var(--buttonColor);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #ff7388;
+        }
+
+        .week-display {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Sidebar menu styling */
+        .sidebar {
+            width: 300px;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: right 0.3s ease;
+            z-index: 10;
+            padding: 20px;
+        }
+
+        .sidebar.open {
+            right: 0;
+        }
+
+        .sidebar input, .sidebar select, .sidebar button {
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .sidebar button {
+            background-color: var(--buttonColor);
+            color: white;
+        }
+
+        .sidebar button:hover {
+            background-color: #ff7388;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 5;
+        }
+
+        .overlay.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="button-container">
+    <button onclick="openSidebar('importAgendaSidebar')">Importeer Agenda</button>
+    <span class="week-display">
+        <button onclick="previousWeek()">&#9664;</button>
+        <span id="week-display">Week 40 van 2024</span>
+        <button onclick="nextWeek()">&#9654;</button>
+    </span>
+    <button onclick="openSidebar('addEventSidebar')">+ Event</button>
+</div>
+
+<div class="calendar">
+    <div class="timeline">
+        <!-- Tijden van 12 AM tot 11 PM -->
+        <div class="time-marker">12 AM</div>
+        <div class="time-marker">1 AM</div>
+        <!-- Herhaal voor elk uur -->
+        <div class="time-marker">11 PM</div>
+    </div>
+
+    <div class="days" id="days-container">
+        <!-- Dynamisch gegenereerde dagen -->
+    </div>
+</div>
+
+<div class="sidebar" id="importAgendaSidebar">
+    <h3>Importeer Agenda</h3>
+    <label for="agendaLink">Agenda Link:</label>
+    <input type="text" id="agendaLink" placeholder="Plak hier de URL">
+    <button onclick="fetchAgenda()">Importeer</button>
+</div>
+
+<div class="sidebar" id="addEventSidebar">
+    <h3>Voeg Event Toe</h3>
+    <input type="text" id="event-title" placeholder="Event Titel">
+    <input type="date" id="event-date">
+    <input type="number" id="start-time" placeholder="Starttijd (0-23)" min="0" max="23">
+    <input type="number" id="end-time" placeholder="Eindtijd (0-23)" min="1" max="23">
+    <label for="repeat">Herhaling:</label>
+    <select id="repeat">
+        <option value="none">Geen</option>
+        <option value="weekly">Wekelijks</option>
+        <option value="monthly">Maandelijks</option>
+        <option value="yearly">Jaarlijks</option>
+    </select>
+    <button onclick="addEvent()">Voeg Event Toe</button>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeSidebars()"></div>
+
+<script>
+    let currentWeek = 40;
+    let currentYear = 2024;
+    let daysOfWeek = ['Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za', 'Zo'];
+
+    // Functie om van week te wisselen en datums bij te werken
+    function updateWeekDisplay() {
+        document.getElementById('week-display').textContent = `Week ${currentWeek} van ${currentYear}`;
+        updateDays();
+    }
+
+    function nextWeek() {
+        currentWeek++;
+        if (currentWeek > 52) {
+            currentWeek = 1;
+            currentYear++;
+        }
+        updateWeekDisplay();
+    }
+
+    function previousWeek() {
+        if (currentWeek > 1) {
+            currentWeek--;
+        } else {
+            currentWeek = 52;
+            currentYear--;
+        }
+        updateWeekDisplay();
+    }
+
+    function updateDays() {
+        const daysContainer = document.getElementById('days-container');
+        daysContainer.innerHTML = '';
+
+        for (let i = 0; i < 7; i++) {
+            const date = new Date(currentYear, 0, (currentWeek - 1) * 7 + i + 1); // Simpel datum calculatie
+            const day = document.createElement('div');
+            day.classList.add('day');
+            day.innerHTML = `
+                <div class="date">
+                    <p class="date-num">${date.getDate()}</p>
+                    <p class="date-day">${daysOfWeek[i]}</p>
+                </div>
+                <div class="events" id="${date.toISOString().split('T')[0]}-events"></div>
+            `;
+            daysContainer.appendChild(day);
+        }
+    }
+
+    // Sidebar openen
+    function openSidebar(id) {
+        document.getElementById(id).classList.add('open');
+        document.getElementById('overlay').classList.add('show');
+    }
+
+    // Sidebar sluiten
+    function closeSidebars() {
+        document.querySelectorAll('.sidebar').forEach(sidebar => sidebar.classList.remove('open'));
+        document.getElementById('overlay').classList.remove('show');
+    }
+
+    // Evenement toevoegen functie
+    function addEvent() {
+        const title = document.getElementById('event-title').value;
+        const date = document.getElementById('event-date').value;
+        const startTime = document.getElementById('start-time').value;
+        const endTime = document.getElementById('end-time').value;
+        const repeat = document.getElementById('repeat').value;
+
+        if (title && date && startTime && endTime) {
+            const eventsContainer = document.getElementById(`${date}-events`);
+            if (eventsContainer) {
+                const event = document.createElement('div');
+                event.classList.add('event');
+                event.textContent = `${title} (${startTime}:00 - ${endTime}:00)`;
+                eventsContainer.appendChild(event);
+            }
+            closeSidebars();
+        } else {
+            alert('Vul alle velden in.');
+        }
+    }
+
+    // Agenda importeren (Placeholder functie)
+    function fetchAgenda() {
+        const link = document.getElementById('agendaLink').value;
+        alert(`Agenda importeren van: ${link}`);
+        closeSidebars();
+    }
+
+    // Init functie om dagen te laden
+    updateDays();
+</script>
+
+</body>
+</html>
